@@ -1,0 +1,40 @@
+﻿<Window x:Class="GlazeBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GlazeBuilder"
+        mc:Ignorable="d"
+        Title="MainWindow" Name="MaterialsMainWindow" Height="450" Width="800">
+    <Grid Name="MaterialsControl" Visibility="Visible">
+        <TabControl>
+            <TabItem Name="MaterialsTab" Width="75" Height="35">
+                <TabItem.Header>
+                    <StackPanel>
+                        <TextBlock>Materials</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    <Grid>
+                        <TextBlock Height="30" Width="150" Margin="97,127,545,262" TextAlignment="Center">Input Material</TextBlock>
+                        <Button Name="SubmitMaterial" Content="Submit" Height="30" Margin="315,162,392,227" Click="SubmitMaterial_Click" ClickMode="Press"/>
+                        <ComboBox Name="OverflowMaterials" Height="30" Width="300" Margin="10,39,482,350" IsEditable="True" Visibility="Hidden"></ComboBox>
+                        <TextBox Name="InputMaterial" Height="30" Width="300" Margin="10,162,482,227" Visibility="Visible"></TextBox>
+                        <TextBlock Height="30" Width="150" Margin="521,10,115,379" TextAlignment="Center">Current Materials</TextBlock>
+                        <ListBox Name="MaterialsList" Width="350" Height="320" Margin="426,45,10,54" SelectionMode="Multiple"/>
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Name="GlazesTab" Width="75" Height="35">
+                <TabItem.Header>
+                    <StackPanel>
+                        <TextBlock>Glazes</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
