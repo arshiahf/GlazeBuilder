@@ -30,7 +30,9 @@
                     </StackPanel>
                 </TabItem.Header>
                 <StackPanel>
-                    
+                    <Grid Height="377">
+                        <ComboBox Name="Cones" Height="20" Width="100" Margin="74,28,612,329"/>
+                    </Grid>
                 </StackPanel>
             </TabItem>
         </TabControl>

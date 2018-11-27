@@ -1,0 +1,123 @@
+{
+	"Alumina": {
+		"Formula": "Al2O3",
+		"Aluminum": 2,
+		"Oxygen": 3
+	},
+	"Antimony Oxide": {
+		"Formula": "Sb2O3",
+		"Antimony": 2,
+		"Oxygen": 3
+	},
+	"Barium Carbonate": {
+		"Formula": "BaCO3",
+		"Barium": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Bismuth Oxide": {
+		"Formula": "Bi2O3",
+		"Bismuth": 2,
+		"Oxygen": 1
+	},
+	"Boric Oxide": {
+		"Formula": "B2O3",
+		"Boron": 2,
+		"Oxygen": 3
+	},
+	"Calcium Carbonate": {
+		"Formula": "CaCO3",
+		"Calcium" :1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Calcium Oxide": {
+		"Formula": "CaO",
+		"Calcium": 1,
+		"Oxygen": 1
+	},
+	"Carbonate": {
+		"Formula": "CO3",
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Chromium Oxide": {
+		"Formula": "Cr2O3",
+		"Chromium": 2,
+		"Oxygen": 3
+	},
+	"Cobalt Carbonate": {
+		"Formula": "CoCO3",
+		"Cobalt": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Cobalt Oxide II": {
+		"Formula": "CoO",
+		"Cobalt": 1,
+		"Oxygen": 1
+	},
+	"Cobalt Oxide II/III": {
+		"Formula": "Co3O4",
+		"Cobalt": 3,
+		"Oxygen": 4
+	},
+	"Copper Carbonate": {
+		"Formula": "CuCO3",
+		"Copper": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Copper Oxide Black": {
+		"Formula": "CuO",
+		"Copper": 1,
+		"Oxygen": 1,
+	},
+	"Copper Oxide Red": {
+		"Formula": "Cu2O",
+		"Copper": 2,
+		"Oxygen": 1
+	},
+	"Crocus Martis": {
+		"Formula": "FeSO4",
+		"Iron": 1,
+		"Sulfur": 1,
+		"Oxygen": 4
+	},
+	"Cryolite": {
+		"Formula": "Na3AlF6",
+		"Sodium": 3,
+		"Aluminum": 1,
+		"Fluorine": 6
+	},
+	"Cupric Oxide Black": {
+		"Formula": "CuO",
+		"Copper": 1,
+		"Oxygen": 1,
+	},
+	"Cuprous Oxide Red": {
+		"Formula": "Cu2O",
+		"Copper": 2,
+		"Oxygen": 1
+	},
+	"Hydroxide": {
+		"Formula": "OH",
+		"Hydrogen": 1,
+		"Oxygen": 1
+	},
+	"Oxidoborane": {
+		"Formula":"BO2",
+		"Boron": 1,
+		"Oxygen": 2
+	},
+	"Phosphate": {
+		"Formula":"PO4",
+		"Phosphorous": 1,
+		"Oxygen": 4
+	},
+	"Water": {
+		"Formula":"H2O",
+		"Hydrogen": 2,
+		"Oxygen": 1
+	}
+}

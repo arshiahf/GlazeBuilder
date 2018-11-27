@@ -17,17 +17,18 @@ namespace GlazeBuilder
             PopulateCones("PyrometricCones.json");
         }
 
-        Dictionary<string, PyrometricCone> Cones { get; set; }
+        public Dictionary<string, PyrometricCone> Cones { get; set; }
         GlazeChemistry GlazeChemistry { get; set; }
 
         void PopulateCones(string pyrometric_cones_filename)
         {
+            Cones = new Dictionary<string, PyrometricCone>();
             string all_cones_raw_json = System.IO.File.ReadAllText(pyrometric_cones_filename);
             JObject cones_json = JObject.Parse(all_cones_raw_json);
 
-            foreach (JObject cone in cones_json.Children())
+            foreach (JProperty cone_json_property in cones_json.Children())
             {
-
+                Cones.Add(cone_json_property.Name, new PyrometricCone(cone_json_property));
             }
         }
     }
@@ -39,7 +40,7 @@ namespace GlazeBuilder
 
         }
 
-        // Double is the ratio compared to 100 of the material
+        // Double is the percentage of 1 of the material in the glaze
         List<Tuple<double, Material>> Materials { get; set; }
         PyrometricCone Cone { get; set; }
         Color FiredColor { get; set; }
@@ -48,9 +49,47 @@ namespace GlazeBuilder
 
     class PyrometricCone
     {
-        PyrometricCone(string coneRaw)
+        public PyrometricCone(JProperty cone_json_property)
         {
-            JObject coneJson = JObject.Parse(coneRaw);
+            MakeCone(cone_json_property);
+        }
+
+        string Name { get; set; }
+        Dictionary<string, int> SmallCones { get; set; }
+        Dictionary<string, int> LargeCones { get; set; }
+        Dictionary<string, int> PCECones { get; set; }
+
+        private void MakeCone(JProperty cone_json_property)
+        {
+            Name = cone_json_property.Name;
+            
+            foreach (JProperty cone_json_subproperty in cone_json_property.Value.ToObject<JObject>().Children())
+            {
+                if (cone_json_subproperty.Name == "Large Cones")
+                {
+                    LargeCones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        LargeCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+                else if (cone_json_subproperty.Name == "Small Cones")
+                {
+                    SmallCones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        SmallCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+                else if (cone_json_subproperty.Name == "P.C.E. Cones")
+                {
+                    PCECones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        PCECones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+            }
         }
     }
 }
