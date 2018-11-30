@@ -16,15 +16,14 @@ namespace GlazeBuilder
             JObject elements_full_json = JObject.Parse(elements_file);
 
             PeriodicTable = new PeriodicTable(elements_full_json);
-             /*
+             
             string simple_molecules_file = System.IO.File.ReadAllText(simple_molecules_filename);
             JObject simple_molecules_json = JObject.Parse(simple_molecules_file);
 
             string compound_molecules_file = System.IO.File.ReadAllText(compound_molecules_filename);
             JObject compound_molecules_json = JObject.Parse(compound_molecules_file);
 
-            MolecularDictionary = new MolecularDictionary(simple_molecules_json, compound_molecules_json);
-            */
+            MolecularDictionary = new MolecularDictionary(simple_molecules_json, compound_molecules_json, PeriodicTable);
         }
 
         PeriodicTable PeriodicTable { get; set; }
@@ -62,29 +61,74 @@ namespace GlazeBuilder
 
     class SimpleMolecule
     {
-        SimpleMolecule(JProperty simple_molecule_json_object)
+        public SimpleMolecule(JProperty simple_molecule_json_property, PeriodicTable periodic_table)
         {
-            Name = simple_molecule_json_object.Name;
+            PeriodicTable = periodic_table;
+            Formula = new List<Tuple<Element, int>>();
+            MolecularWeight = 0.0;
+
+            Name = simple_molecule_json_property.Name;
+            JObject simple_molecule_object = simple_molecule_json_property.Value.ToObject<JObject>();
+            BuildSimpleMolecule(simple_molecule_object);
         }
 
-        string Name { get; set; }
+        public string Name { get; set; }
+        public string FullFormula { get; set; }
         List<Tuple<Element, int>> Formula { get; set; }
-        string FullFormula { get; set; }
-        double MolecularWeight { get; set; }
+        public double MolecularWeight { get; set; }
+
+        private PeriodicTable PeriodicTable { get; set; }
+
+        void BuildSimpleMolecule(JObject simple_molecule_object)
+        {
+            foreach (JProperty property in simple_molecule_object.Children())
+            {
+                if (property.Name == "Formula")
+                {
+                    FullFormula = property.Value.ToString();
+                }
+                else if (PeriodicTable.Contains(property.Name))
+                {
+                    Formula.Add(new Tuple<Element, int>(PeriodicTable.FindElement(property.Name), Convert.ToInt32(property.Value)));
+                }
+                else
+                {
+                    Console.WriteLine("Error, element {0} from molecule {1} not found in Periodic Table of Elements.", property.Name, Name);
+                }
+            }
+
+            foreach (Tuple<Element, int> element in Formula)
+            {
+                MolecularWeight += element.Item1.AtomicWeight * element.Item2;
+            }
+        }
     }
 
     class CompoundMolecule
     {
-        CompoundMolecule(JProperty compound_molecule_json_object)
+        public CompoundMolecule(JProperty compound_molecule_json_property, PeriodicTable periodic_table)
         {
-            Name = compound_molecule_json_object.Name;
+            Name = compound_molecule_json_property.Name;
+            JObject compound_molecule_object = compound_molecule_json_property.Value.ToObject<JObject>();
+            BuildCompoundMolecule(compound_molecule_object);
         }
 
         public string Name { get; set; }
+        string FullFormula { get; set; }
         Dictionary<string, Tuple<SimpleMolecule, int>> SubMolecules { get; set; }
         Dictionary<string, Tuple<Element, int>> AdditionalElements { get; set; }
-        string FullFormula { get; set; }
-        int MolecularWeight { get; set; }
+        double MolecularWeight { get; set; }
+
+        void BuildCompoundMolecule(JObject compound_molecule_object)
+        {
+            foreach (JProperty property in compound_molecule_object.Children())
+            {
+                if (property.Name == "Formula")
+                {
+                    FullFormula = property.Value.ToString();
+                }
+            }
+        }
     }
 
     class GenericMolecule
@@ -107,13 +151,24 @@ namespace GlazeBuilder
 
     class MolecularDictionary
     {
-        public MolecularDictionary(JObject simple_molecules_json, JObject compound_molecules_json)
+        public MolecularDictionary(JObject simple_molecules_json, JObject compound_molecules_json, PeriodicTable periodic_table)
         {
+            SimpleMolecules = new Dictionary<string, SimpleMolecule>();
+            CompoundMolecules = new Dictionary<string, CompoundMolecule>();
 
+            foreach (JProperty simple_molecule in simple_molecules_json.Children())
+            {
+                SimpleMolecules.Add(simple_molecule.Name, new SimpleMolecule(simple_molecule, periodic_table));
+            }
+
+            foreach (JProperty compound_molecule in compound_molecules_json.Children())
+            {
+                CompoundMolecules.Add(compound_molecule.Name, new CompoundMolecule(compound_molecule, periodic_table));
+            }
         }
 
-        Dictionary<string, CompoundMolecule> CompoundMolecules { get; set; }
         Dictionary<string, SimpleMolecule> SimpleMolecules { get; set; }
+        Dictionary<string, CompoundMolecule> CompoundMolecules { get; set; }
 
         public bool Contains(string molecule_name)
         {
@@ -161,6 +216,18 @@ namespace GlazeBuilder
         {
 
             Elements.Add(element_json.Name, new Element(element_json));
+        }
+
+        public bool Contains(string element_name)
+        {
+            if (Elements.ContainsKey(element_name))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public Element FindElement(string element_name)

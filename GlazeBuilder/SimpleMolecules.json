@@ -32,7 +32,7 @@
 	},
 	"Calcium Carbonate": {
 		"Formula": "CaCO3",
-		"Calcium" :1,
+		"Calcium": 1,
 		"Carbon": 1,
 		"Oxygen": 3
 	},
@@ -109,6 +109,11 @@
 		"Formula": "Cu2O",
 		"Copper": 2,
 		"Oxygen": 1
+	},
+	"Dilithium Difluoride": {
+		"Formula": "Li2F2",
+		"Lithium": 2,
+		"Fluorine": 2
 	},
 	"Diphosphorus Hexoxide": {
 		"Formula": "P2O6",
@@ -246,6 +251,12 @@
 		"Manganese": 1,
 		"Oxygen": 2
 	},
+	"Nickel Carbonate": {
+		"Formula": "NiCO3",
+		"Nickel": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
 	"Nickel Oxide Green": {
 		"Formula": "NiO",
 		"Nickel": 1,
@@ -352,6 +363,11 @@
 		"Silicon": 1,
 		"Carbon": 1
 	},
+	"Silicon monoxide": {
+		"Formula": "SiO",
+		"Silicon": 1,
+		"Oxygen": 1
+	},
 	"Soda": {
 		"Formula": "Na2O",
 		"Sodium": 2,
@@ -362,6 +378,13 @@
 		"Sodium": 2,
 		"Carbon": 1,
 		"Oxygen": 3
+	},
+	"Sodium Aluminium Silicate": {
+		"Formula": "NaAlSiO4",
+		"Sodium": 1,
+		"Aluminum": 1,
+		"Silicon": 1,
+		"Oxygen": 4
 	},
 	"Sodium Bicarbonate": {
 		"Formula": "NaHCO3",
@@ -381,6 +404,11 @@
 		"Strontium": 1,
 		"Carbon": 1,
 		"Oxygen": 3
+	},
+	"Sodium Chloride": {
+		"Formula": "NaCl",
+		"Sodium": 1,
+		"Chlorine": 1
 	},
 	"Strontium Oxide": {
 		"Formula": "SrO",
@@ -430,7 +458,7 @@
 	},
 	"Zircon": {
 		"Formula": "ZrSiO4",
-		"Zircon": 1,
+		"Zirconium": 1,
 		"Silicon": 1,
 		"Oxygen": 4
 	},
