@@ -110,6 +110,11 @@
 		"Copper": 2,
 		"Oxygen": 1
 	},
+	"Diphosphorus Hexoxide": {
+		"Formula": "P2O6",
+		"Phosphorous": 2,
+		"Oxygen": 6
+	},
 	"Ferric Oxide": {
 		"Formula": "Fe2O3",
 		"Iron": 2,
@@ -147,8 +152,8 @@
 	},
 	"Iron Chromate": {
 		"Formula": "FeCrO4",
-		"Chromium": 1,
 		"Iron": 1,
+		"Chromium": 1,
 		"Oxygen": 4
 	},
 	"Iron Oxide Black": {
@@ -165,6 +170,12 @@
 		"Formula": "Fe3O4",
 		"Iron": 3,
 		"Oxygen": 4
+	},
+	"Lead Carbonate": {
+		"Formula": "PbCO3",
+		"Lead": 1,
+		"Carbon": 1,
+		"Oxygen": 3
 	},
 	"Lead Oxide Red": {
 		"Formula": "Pb3O4",
@@ -188,9 +199,14 @@
 	},
 	"Lithium Carbonate": {
 		"Formula": "Li2CO3",
-		"Carbon": 1,
 		"Lithium": 2,
+		"Carbon": 1,
 		"Oxygen": 3
+	},
+	"Lithium Fluoride": {
+		"Formula": "LiF",
+		"Lithium": 1,
+		"Fluorine": 1
 	},
 	"Lithium Oxide": {
 		"Formula": "Li2O",
@@ -199,14 +215,14 @@
 	},
 	"Magnesite": {
 		"Formula": "MgCO3",
-		"Carbon": 1,
 		"Magnesium": 1,
+		"Carbon": 1,
 		"Oxygen": 3
 	},
 	"Magnesium Carbonate": {
 		"Formula": "MgCO3",
-		"Carbon": 1,
 		"Magnesium": 1,
+		"Carbon": 1,
 		"Oxygen": 3
 	},
 	"Magnesium Oxide": {
@@ -221,8 +237,8 @@
 	},
 	"Manganese Carbonate": {
 		"Formula": "MnCO3",
-		"Carbon": 1,
 		"Manganese": 1,
+		"Carbon": 1,
 		"Oxygen": 3
 	},
 	"Manganese Dioxide": {
@@ -252,9 +268,9 @@
 	},
 	"Niter": {
 		"Formula": "KNO3",
+		"Potassium": 1,
 		"Nitrogen": 1,
-		"Oxygen": 3,
-		"Potassium": 1
+		"Oxygen": 3
 	},
 	"Oxidoborane": {
 		"Formula":"BO2",
@@ -263,9 +279,9 @@
 	},
 	"Pearl Ash": {
 		"Formula": "K2CO3",
+		"Potassium": 2,
 		"Carbon": 1,
-		"Oxygen": 3,
-		"Potassium": 2
+		"Oxygen": 3
 	},
 	"Periclase": {
 		"Formula": "MgO",
@@ -279,29 +295,149 @@
 	},
 	"Potash": {
 		"Formula": "K2O",
-		"Oxygen": 1,
-		"Potassium": 2
+		"Potassium": 2,
+		"Oxygen": 1
 	},
 	"Potassium Carbonate": {
 		"Formula": "K2CO3",
+		"Potassium": 2,
 		"Carbon": 1,
-		"Oxygen": 3,
-		"Potassium": 2
+		"Oxygen": 3
 	},
 	"Potassium Chromate": {
 		"Formula": "K2CrO4",
+		"Potassium": 2,
 		"Chromium": 1,
-		"Oxygen": 4,
-		"Potassium": 2
+		"Oxygen": 4
+	},
+	"Potassium Dichromate": {
+		"Formula": "K2Cr2O7",
+		"Potassium": 2,
+		"Chromium": 2,
+		"Oxygen": 7
+	},
+	"Potassium Nitrate": {
+		"Formula": "KNO3",
+		"Potassium": 1,
+		"Nitrogen": 1,
+		"Oxygen": 3
+	},
+	"Potassium Oxide": {
+		"Formula": "K2O",
+		"Potassium": 2,
+		"Oxygen": 1
 	},
 	"Pyrolusite": {
 		"Formula": "MnO2",
 		"Manganese": 1,
 		"Oxygen": 2
 	},
+	"Quartz": {
+		"Formula": "SiO2",
+		"Silicon": 1,
+		"Oxygen": 2
+	},
+	"Rutile": {
+		"Formula": "TiO2",
+		"Titanium": 1,
+		"Oxygen": 2
+	},
+	"Silica": {
+		"Formula": "SiO2",
+		"Silicon": 1,
+		"Oxygen": 2
+	},
+	"Silica Carbide": {
+		"Formula": "SiC",
+		"Silicon": 1,
+		"Carbon": 1
+	},
+	"Soda": {
+		"Formula": "Na2O",
+		"Sodium": 2,
+		"Oxygen": 1
+	},
+	"Soda Ash": {
+		"Formula": "Na2CO3",
+		"Sodium": 2,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Sodium Bicarbonate": {
+		"Formula": "NaHCO3",
+		"Sodium": 1,
+		"Hydrogen": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Sodium Carbonate": {
+		"Formula": "Na2CO3",
+		"Sodium": 2,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Strontium Carbonate": {
+		"Formula": "SrCO3",
+		"Strontium": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Strontium Oxide": {
+		"Formula": "SrO",
+		"Strontium": 1,
+		"Oxygen": 1
+	},
+	"Tin Oxide White": {
+		"Formula": "SnO2",
+		"Tin": 1,
+		"Oxygen": 2
+	},
+	"Titanium Oxide": {
+		"Formula": "TiO2",
+		"Titanium": 1,
+		"Oxygen": 2
+	},
+	"Uranium Oxide": {
+		"Formula": "U3O8",
+		"Uranium": 3,
+		"Oxygen": 8
+	},
+	"Vanadium Oxide": {
+		"Formula": "V2O5",
+		"Vanadium": 2,
+		"Oxygen": 5
+	},
 	"Water": {
 		"Formula":"H2O",
 		"Hydrogen": 2,
 		"Oxygen": 1
+	},
+	"Whiting": {
+		"Formula": "CaCO3",
+		"Calcium": 1,
+		"Carbon": 1,
+		"Oxygen": 3
+	},
+	"Zinc Oxide": {
+		"Formula": "ZnO",
+		"Zinc": 1,
+		"Oxygen": 1
+	},
+	"Zincite": {
+		"Formula": "ZnO",
+		"Zinc": 1,
+		"Oxygen": 1
+	},
+	"Zircon": {
+		"Formula": "ZrSiO4",
+		"Zircon": 1,
+		"Silicon": 1,
+		"Oxygen": 4
+	},
+	"Zirconium Silicate": {
+		"Formula": "ZrSiO4",
+		"Zirconium": 1,
+		"Silicon": 1,
+		"Oxygen": 4
 	}
 }

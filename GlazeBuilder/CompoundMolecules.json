@@ -1,3 +1,25 @@
 {
-	
+	"Alumina Hydrate": {
+		"Formula": "[Al2O3]:3[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Water": 3
+		}
+	},
+	"Amblygonite": {
+		"Formula": "2[LiF]:[Al2O3]:[P2O6]",
+		"Submolecules": {
+			"Lithium Fluoride": 2,
+			"Alumina": 1,
+			"Diphosphorous Hexoxide": 1
+		}
+	},
+	"Bentonite": {
+		"Formula": "[Al2O3]:4[SiO2]:[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Silica": 4,
+			"Water": 1
+		}
+	},
 }
