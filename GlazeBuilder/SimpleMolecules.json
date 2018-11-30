@@ -15,6 +15,11 @@
 		"Carbon": 1,
 		"Oxygen": 3
 	},
+	"Barium Oxide": {
+		"Formula": "BaO",
+		"Barium": 1,
+		"Oxygen": 1
+	},
 	"Bismuth Oxide": {
 		"Formula": "Bi2O3",
 		"Bismuth": 2,
@@ -35,6 +40,11 @@
 		"Formula": "CaO",
 		"Calcium": 1,
 		"Oxygen": 1
+	},
+	"Carborundum": {
+		"Formula": "SiC",
+		"Silicon": 1,
+		"Carbon": 1
 	},
 	"Carbonate": {
 		"Formula": "CO3",
@@ -100,20 +110,194 @@
 		"Copper": 2,
 		"Oxygen": 1
 	},
+	"Ferric Oxide": {
+		"Formula": "Fe2O3",
+		"Iron": 2,
+		"Oxygen": 3
+	},
+	"Ferrous Oxide": {
+		"Formula": "FeO",
+		"Iron": 1,
+		"Oxygen": 1
+	},
+	"Ferrous-Ferric Oxide": {
+		"Formula": "Fe3O4",
+		"Iron": 3,
+		"Oxygen": 4
+	},
+	"Flint":{
+		"Formula": "SiO2",
+		"Silicon": 2,
+		"Oxygen": 2
+	},
+	"Fluorspar": {
+		"Formula": "CaF2",
+		"Calcium": 1,
+		"Fluorine": 2
+	},
+	"Hematite": {
+		"Formula": "Fe2O3",
+		"Iron": 2,
+		"Oxygen": 3
+	},
 	"Hydroxide": {
 		"Formula": "OH",
 		"Hydrogen": 1,
 		"Oxygen": 1
+	},
+	"Iron Chromate": {
+		"Formula": "FeCrO4",
+		"Chromium": 1,
+		"Iron": 1,
+		"Oxygen": 4
+	},
+	"Iron Oxide Black": {
+		"Formula": "FeO",
+		"Iron": 1,
+		"Oxygen": 1
+	},
+	"Iron Oxide Red": {
+		"Formula": "Fe2O3",
+		"Iron": 2,
+		"Oxygen": 3
+	},
+	"Iron Oxide": {
+		"Formula": "Fe3O4",
+		"Iron": 3,
+		"Oxygen": 4
+	},
+	"Lead Oxide Red": {
+		"Formula": "Pb3O4",
+		"Lead": 3,
+		"Oxygen": 4
+	},
+	"Lead Oxide Yellow": {
+		"Formula": "PbO",
+		"Lead": 1,
+		"Oxygen": 1
+	},
+	"Lime": {
+		"Formula": "CaO",
+		"Calcium": 1,
+		"Oxygen": 1
+	},
+	"Litharge": {
+		"Formula": "PbO",
+		"Lead": 1,
+		"Oxygen": 1
+	},
+	"Lithium Carbonate": {
+		"Formula": "Li2CO3",
+		"Carbon": 1,
+		"Lithium": 2,
+		"Oxygen": 3
+	},
+	"Lithium Oxide": {
+		"Formula": "Li2O",
+		"Lithium": 2,
+		"Oxygen": 1
+	},
+	"Magnesite": {
+		"Formula": "MgCO3",
+		"Carbon": 1,
+		"Magnesium": 1,
+		"Oxygen": 3
+	},
+	"Magnesium Carbonate": {
+		"Formula": "MgCO3",
+		"Carbon": 1,
+		"Magnesium": 1,
+		"Oxygen": 3
+	},
+	"Magnesium Oxide": {
+		"Formula": "MgO",
+		"Magnesium": 1,
+		"Oxygen": 1
+	},
+	"Magnetite": {
+		"Formula": "Fe3O4",
+		"Iron": 3,
+		"Oxygen": 4
+	},
+	"Manganese Carbonate": {
+		"Formula": "MnCO3",
+		"Carbon": 1,
+		"Manganese": 1,
+		"Oxygen": 3
+	},
+	"Manganese Dioxide": {
+		"Formula": "MnO2",
+		"Manganese": 1,
+		"Oxygen": 2
+	},
+	"Nickel Oxide Green": {
+		"Formula": "NiO",
+		"Nickel": 1,
+		"Oxygen": 1
+	},
+	"Nickel Oxide Black": {
+		"Formula": "Ni2O3",
+		"Nickel": 2,
+		"Oxygen": 3
+	},
+	"Nickelic Oxide": {
+		"Formula": "Ni2O3",
+		"Nickel": 2,
+		"Oxygen": 3
+	},
+	"Nickelous Oxide": {
+		"Formula": "NiO",
+		"Nickel": 1,
+		"Oxygen": 1
+	},
+	"Niter": {
+		"Formula": "KNO3",
+		"Nitrogen": 1,
+		"Oxygen": 3,
+		"Potassium": 1
 	},
 	"Oxidoborane": {
 		"Formula":"BO2",
 		"Boron": 1,
 		"Oxygen": 2
 	},
+	"Pearl Ash": {
+		"Formula": "K2CO3",
+		"Carbon": 1,
+		"Oxygen": 3,
+		"Potassium": 2
+	},
+	"Periclase": {
+		"Formula": "MgO",
+		"Magnesium": 1,
+		"Oxygen": 1
+	},
 	"Phosphate": {
 		"Formula":"PO4",
 		"Phosphorous": 1,
 		"Oxygen": 4
+	},
+	"Potash": {
+		"Formula": "K2O",
+		"Oxygen": 1,
+		"Potassium": 2
+	},
+	"Potassium Carbonate": {
+		"Formula": "K2CO3",
+		"Carbon": 1,
+		"Oxygen": 3,
+		"Potassium": 2
+	},
+	"Potassium Chromate": {
+		"Formula": "K2CrO4",
+		"Chromium": 1,
+		"Oxygen": 4,
+		"Potassium": 2
+	},
+	"Pyrolusite": {
+		"Formula": "MnO2",
+		"Manganese": 1,
+		"Oxygen": 2
 	},
 	"Water": {
 		"Formula":"H2O",

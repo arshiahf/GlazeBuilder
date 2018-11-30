@@ -62,23 +62,25 @@ namespace GlazeBuilder
 
     class SimpleMolecule
     {
-        SimpleMolecule(JObject simple_molecule_json_object)
+        SimpleMolecule(JProperty simple_molecule_json_object)
         {
-            Name = simple_molecule_json_object.GetValue("Name").ToString();
+            Name = simple_molecule_json_object.Name;
         }
 
         string Name { get; set; }
         List<Tuple<Element, int>> Formula { get; set; }
+        string FullFormula { get; set; }
         double MolecularWeight { get; set; }
     }
 
     class CompoundMolecule
     {
-        CompoundMolecule(JObject compound_molecule_json_object)
+        CompoundMolecule(JProperty compound_molecule_json_object)
         {
-            
+            Name = compound_molecule_json_object.Name;
         }
 
+        public string Name { get; set; }
         Dictionary<string, Tuple<SimpleMolecule, int>> SubMolecules { get; set; }
         Dictionary<string, Tuple<Element, int>> AdditionalElements { get; set; }
         string FullFormula { get; set; }
