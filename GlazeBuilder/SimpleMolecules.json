@@ -115,7 +115,7 @@
 		"Lithium": 2,
 		"Fluorine": 2
 	},
-	"Diphosphorus Hexoxide": {
+	"Diphosphorous Hexoxide": {
 		"Formula": "P2O6",
 		"Phosphorous": 2,
 		"Oxygen": 6
@@ -363,7 +363,7 @@
 		"Silicon": 1,
 		"Carbon": 1
 	},
-	"Silicon monoxide": {
+	"Silicon Monoxide": {
 		"Formula": "SiO",
 		"Silicon": 1,
 		"Oxygen": 1
