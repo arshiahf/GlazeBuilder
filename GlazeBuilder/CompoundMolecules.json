@@ -1,0 +1,263 @@
+{
+	"Albite": {
+		"Formula": "[Na2O]:[Al2O3]:6[SiO2]",
+		"Submolecules": {
+			"Soda": 1,
+			"Alumina": 1,
+			"Silica": 6
+		}
+	},
+	"Alumina Hydrate": {
+		"Formula": "[Al2O3]:3[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Water": 3
+		}
+	},
+	"Amblygonite": {
+		"Formula": "2[LiF]:[Al2O3]:[P2O6]",
+		"Submolecules": {
+			"Lithium Fluoride": 2,
+			"Alumina": 1,
+			"Diphosphorous Hexoxide": 1
+		}
+	},
+	"Bentonite": {
+		"Formula": "[Al2O3]:4[SiO2]:[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Silica": 4,
+			"Water": 1
+		}
+	},
+	"Bone Ash": {
+		"Formula": "Ca3:2[PO4]",
+		"Submolecules": {
+			"Phosphate": 2
+		},
+		"Calcium": 3
+	},
+	"Borax": {
+		"Formula": "[Na2O]:2[B2O3]:10[H2O]",
+		"Submolecules": {
+			"Soda": 1,
+			"Boric Oxide": 2,
+			"Water": 10
+		}
+	},
+	"Boric Acid": {
+		"Formula": "[B2O3]:3[H2O]",
+		"Submolecules": {
+			"Boric Oxide": 1,
+			"Water": 3
+		}
+	},
+	"Calcined Borax": {
+		"Formula": "[Na2O]:2[B2O3]",
+		"Submolecules": {
+			"Soda": 1,
+			"Boric Oxide": 2
+		}
+	},
+	"Calcium Borate": {
+		"Formula": "Ca:2[BO2]",
+		"Submolecules": {
+			"Oxidoborane": 2
+		},
+		"Calcium": 1
+	},
+	"Calcined Clay": {
+		"Formula": "[Al2O3]:2[SiO]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Silicon Monoxide": 2
+		}
+	},
+	"China Clay": {
+		"Formula": "[Al2O3]:2[SiO2]:2[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Silica": 2,
+			"Water": 2
+		}
+	},
+	"Cobalt Carbonate Basic": {
+		"Formula": "[CoCO3]:Co:2[OH]",
+		"Submolecules": {
+			"Cobalt Carbonate": 1,
+			"Hydroxide": 2
+		},
+		"Cobalt": 1
+	},
+	"Colemanite": {
+		"Formula": "2[CaO]:3[B2O3]:5[H2O]",
+		"Submolecules": {
+			"Calcium Oxide": 2,
+			"Boric Oxide": 3,
+			"Water": 5
+		}
+	},
+	"Copper Carbonate Basic": {
+		"Formula": "[CuCO3]:Cu:2[OH]",
+		"Submolecules": {
+			"Copper Carbonate": 1,
+			"Hydroxide": 2
+		},
+		"Copper": 1
+	},
+	"Dolomite": {
+		"Formula": "[CaCO3]:[MgCO3]",
+		"Submolecules": {
+			"Calcium Carbonate": 1,
+			"Magnesium Carbonate": 1
+		}
+	},
+	"Feldspar Potassium": {
+		"Formula": "[K2O]:[Al2O3]:6[SiO2]",
+		"Submolecules": {
+			"Potash": 1,
+			"Alumina": 1,
+			"Silica": 6
+		}
+	},
+	"Feldspar Sodium": {
+		"Formula": "[Na2O]:[Al2O3]:6[SiO2]",
+		"Submolecules": {
+			"Soda": 1,
+			"Alumina": 1,
+			"Silica": 6
+		}
+	},
+	"Gerstley Borate": {
+		"Formula": "[CaO]:[B2O3]:5[H2O]",
+		"Submolecules": {
+			"Calcium Oxide": 1,
+			"Boric Oxide": 1,
+			"Water": 5
+		}
+	},
+	"Ilmenite": {
+		"Formula": "[FeO]:[TiO2]",
+		"Submolecules": {
+			"Iron Oxide Black": 1,
+			"Titanium Oxide": 1
+		}
+	},
+	"Lead Bisilicate": {
+		"Formula": "[PbO]:2[SiO2]",
+		"Submolecules": {
+			"Lead Oxide Yellow": 1,
+			"Silica": 2
+		}
+	},
+	"Lead Carbonate White": {
+		"Formula": "2[PbCO3]:Pb:2[OH]",
+		"Submolecules": {
+			"Lead Carbonate": 2,
+			"Hydroxide": 2
+		},
+		"Lead": 1
+	},
+	"Lead Sesquisilicate": {
+		"Formula": "2[PbO]:3[SiO2]",
+		"Submolecules": {
+			"Lead Oxide Yellow": 2,
+			"Silica": 3
+		}
+	},
+	"Lepidolite": {
+		"Formula": "[Li2F2]:[Al2O3]:3[SiO2]",
+		"Submolecules": {
+			"Dilithium Difluoride": 1,
+			"Alumina": 1,
+			"Silica": 3
+		}
+	},
+	"Magnesium Carbonate Light": {
+		"Formula": "3[MgCO3]:Mg:2[OH]:3[H2O]",
+		"Submolecules": {
+			"Magnesium Carbonate": 3,
+			"Hydroxide": 2,
+			"Water": 3
+		},
+		"Magnesium": 1
+	},
+	"Nephiline Syenite": {
+		"Formula": "[K2O]:3[Na2O]:4[Al2O3]:8[SiO2]",
+		"Submolecules": {
+			"Potash": 1,
+			"Soda": 3,
+			"Alumina": 4,
+			"Silica": 8
+		}
+	},
+	"Orthoclase": {
+		"Formula": "[K2O]:[Al2O3]:6[SiO2]",
+		"Submolecules": {
+			"Potash": 1,
+			"Alumina": 1,
+			"Silica": 6
+		}
+	},
+	"Petalite": {
+		"Formula": "[Li2O]:[Al2O3]:8[SiO]",
+		"Submolecules": {
+			"Lithium Oxide": 1,
+			"Alumina": 1,
+			"Silica": 8
+		}
+	},
+	"Raw Kaolonite Clay": {
+		"Formula": "[Al2O3]:2[SiO2]:2[H2O]",
+		"Submolecules": {
+			"Alumina": 1,
+			"Silica": 2,
+			"Water": 2
+		}
+	},
+	"Sodalite": {
+		"Formula": "3[NaAlSiO4]:[NaCl]",
+		"Submolecules": {
+			"Sodium Aluminium Silicate": 3,
+			"Sodium Chloride": 1
+		}
+	},
+	"Spodumene": {
+		"Formula": "[Li2O]:[Al2O3]:4[SiO2]",
+		"Submolecules": {
+			"Lithium Oxide": 1,
+			"Alumina": 1,
+			"Silica": 4
+		}
+	},
+	"Steatite": {
+		"Formula": "3[MgO]:4[SiO2]:[H2O]",
+		"Submolecules": {
+			"Magnesium Oxide": 3,
+			"Silica": 4,
+			"Water": 1
+		}
+	},
+	"Talc": {
+		"Formula": "3[MgO]:4[SiO2]:[H2O]",
+		"Submolecules": {
+			"Magnesium Oxide": 3,
+			"Silica": 4,
+			"Water": 1
+		}
+	},
+	"Wollastonite": {
+		"Formula": "[CaO]:[SiO2]",
+		"Submolecules": {
+			"Calcium Oxide": 1,
+			"Silica": 1
+		}
+	},
+	"Yellow Ocher": {
+		"Formula": "2[Fe2O3]:3[H2O]",
+		"Submolecules": {
+			"Iron Oxide Red": 2,
+			"Water": 3
+		}
+	}
+}

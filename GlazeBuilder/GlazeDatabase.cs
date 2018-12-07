@@ -4,7 +4,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Chemistry;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace GlazeBuilder
 {
@@ -12,26 +13,22 @@ namespace GlazeBuilder
     {
         public GlazeDatabase()
         {
-            populateCones("PyrometricCones.csv");
+            GlazeChemistry = new GlazeChemistry("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
+            PopulateCones("PyrometricCones.json");
         }
 
-        Dictionary<string, Int32[]> Cones { get; set; }
-        // Cone array reads Temp C @ 60C/hr, Temp F @ 108F/hr, Temp C @ 150C/hr, Temp F @ 270F/hr
-        // Cone temps read left to right off of the Large Cones section on p.89 of Val Cushing's handbook
+        public Dictionary<string, PyrometricCone> Cones { get; set; }
+        GlazeChemistry GlazeChemistry { get; set; }
 
-        void populateCones(string filename)
+        void PopulateCones(string pyrometric_cones_filename)
         {
-            string[] allConesText = System.IO.File.ReadAllLines(filename);
+            Cones = new Dictionary<string, PyrometricCone>();
+            string all_cones_raw_json = System.IO.File.ReadAllText(pyrometric_cones_filename);
+            JObject cones_json = JObject.Parse(all_cones_raw_json);
 
-            foreach (string element in allConesText)
+            foreach (JProperty cone_json_property in cones_json.Children())
             {
-                var parts = element.Split(',');
-                int[] conetemps = new int[parts.Length - 1];
-                for (int i = 1; i < parts.Length; i++)
-                {
-                    conetemps[i - 1] = Convert.ToInt32(parts[i]);
-                }
-                Cones.Add(parts[0], conetemps);
+                Cones.Add(cone_json_property.Name, new PyrometricCone(cone_json_property));
             }
         }
     }
@@ -43,10 +40,56 @@ namespace GlazeBuilder
 
         }
 
-        // Double is the ratio compared to 100 of the material
-        List<Tuple<double, ChemicalFormula>> Materials { get; set; }
-        Tuple<string, Int32[]> Cone { get; set; }
+        // Double is the percentage of 1 of the material in the glaze
+        List<Tuple<double, Material>> Materials { get; set; }
+        PyrometricCone Cone { get; set; }
         Color FiredColor { get; set; }
         bool Reduction { get; set; }
+    }
+
+    class PyrometricCone
+    {
+        public PyrometricCone(JProperty cone_json_property)
+        {
+            MakeCone(cone_json_property);
+        }
+
+        string Name { get; set; }
+        Dictionary<string, int> SmallCones { get; set; }
+        Dictionary<string, int> LargeCones { get; set; }
+        Dictionary<string, int> PCECones { get; set; }
+
+        private void MakeCone(JProperty cone_json_property)
+        {
+            Name = cone_json_property.Name;
+            
+            foreach (JProperty cone_json_subproperty in cone_json_property.Value.ToObject<JObject>().Children())
+            {
+                if (cone_json_subproperty.Name == "Large Cones")
+                {
+                    LargeCones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        LargeCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+                else if (cone_json_subproperty.Name == "Small Cones")
+                {
+                    SmallCones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        SmallCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+                else if (cone_json_subproperty.Name == "P.C.E. Cones")
+                {
+                    PCECones = new Dictionary<string, int>();
+                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    {
+                        PCECones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                    }
+                }
+            }
+        }
     }
 }

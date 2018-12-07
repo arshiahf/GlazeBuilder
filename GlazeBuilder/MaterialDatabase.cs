@@ -6,7 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using Chemistry;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace GlazeBuilder
 {
@@ -14,50 +15,27 @@ namespace GlazeBuilder
     {
         public MaterialDatabase(string matFile, MainWindow window)
         {
-            Elements = new Dictionary<string, Element>();
-            Materials = new List<Material>();
-            this.MainWin = window;
-            populateAllElements("PeriodicTableElements.csv");
-            this.populatePeriodicTable(this.Elements);
-            populateAllMaterials(matFile);
+            Materials = new Dictionary<string, Material>();
+            this.MainWindow = window;
+            PopulateAllMaterials(matFile);
         }
+        
+        public GlazeChemistry GlazeChemistry { get; set; }
+        private MainWindow MainWindow { get; set; }
+        public Dictionary<string, Material> Materials { get; set; }
 
-        private MainWindow MainWin { get; set; }
-        private Dictionary<string, Element> Elements { get; set; }
-        public List<Material> Materials { get; set; }
-
-        private void populateAllElements(string filename)
+        private void PopulateAllMaterials(string filename)
         {
-            string[] allElementsText = System.IO.File.ReadAllLines(filename);
+            string all_materials_text = System.IO.File.ReadAllText(filename);
+            JObject all_materials_json_object = JObject.Parse(all_materials_text);
 
-            foreach (string element in allElementsText)
+            foreach (JProperty material in all_materials_json_object.Children())
             {
-                var parts = element.Split(',');
-                Elements.Add(parts[0], new Element(parts[1], Convert.ToInt32(parts[2]), Convert.ToDouble(parts[3])));
-            }
-        }
-
-        private void populatePeriodicTable(Dictionary<String, Element> dict)
-        {
-            foreach (KeyValuePair<string, Element> kvp in dict)
-            {
-                PeriodicTable.Add(kvp.Value);
-            }
-        }
-
-        private void populateAllMaterials(string filename)
-        {
-            string[] allMaterialsText = System.IO.File.ReadAllLines(filename);
-
-            foreach (string formula in allMaterialsText)
-            {
-                var parts = formula.Split(',');
-                Console.WriteLine("Material: {0}, Formula: {1}", parts[0], parts[1]);
-                Materials.Add(new Material(parts[0], new ChemicalFormula(parts[1])));
+                Materials.Add(material.Name, new Material(material));
             }
 
-            MainWin.MaterialsList.ItemsSource = Materials;
-            MainWin.MaterialsList.DisplayMemberPath = "MatName";
+            MainWindow.MaterialsList.ItemsSource = Materials;
+            MainWindow.MaterialsList.DisplayMemberPath = "Name";
         }
 
         /*
@@ -111,15 +89,13 @@ namespace GlazeBuilder
 
     class Material
     {
-        public Material(string matName, ChemicalFormula matFormula)
+        public Material(JProperty material_json_property)
         {
-            MatName = matName;
-            MatFormula = matFormula;
+            Name = material_json_property.Name;
         }
 
-        public Material() { }
-
-        public string MatName { get; set; }
-        ChemicalFormula MatFormula { get; set; }
+        string Name { get; set; }
+        List<CompoundMolecule> CompoundMolecules { get; set; }
+        List<SimpleMolecule> SimpleMolecules { get; set; }
     }
 }

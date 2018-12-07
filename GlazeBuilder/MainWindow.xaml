@@ -15,13 +15,11 @@
                     </StackPanel>
                 </TabItem.Header>
                 <StackPanel>
-                    <Grid>
-                        <TextBlock Height="30" Width="150" Margin="97,127,545,262" TextAlignment="Center">Input Material</TextBlock>
-                        <Button Name="SubmitMaterial" Content="Submit" Height="30" Margin="315,162,392,227" Click="SubmitMaterial_Click" ClickMode="Press"/>
+                    <Grid Height="377">
+                        <Button Name="SubmitMaterial" Content="Select" Height="30" Margin="257,12,450,335" Click="SubmitMaterial_Click" ClickMode="Press"/>
                         <ComboBox Name="OverflowMaterials" Height="30" Width="300" Margin="10,39,482,350" IsEditable="True" Visibility="Hidden"></ComboBox>
-                        <TextBox Name="InputMaterial" Height="30" Width="300" Margin="10,162,482,227" Visibility="Visible"></TextBox>
-                        <TextBlock Height="30" Width="150" Margin="521,10,115,379" TextAlignment="Center">Current Materials</TextBlock>
-                        <ListBox Name="MaterialsList" Width="350" Height="320" Margin="426,45,10,54" SelectionMode="Multiple"/>
+                        <TextBlock Height="30" Width="150" Margin="102,12,534,335" TextAlignment="Center">Current Materials</TextBlock>
+                        <ListBox Name="MaterialsList" Width="350" Height="320" Margin="10,47,426,10" SelectionMode="Multiple"/>
                     </Grid>
                 </StackPanel>
             </TabItem>
@@ -32,7 +30,9 @@
                     </StackPanel>
                 </TabItem.Header>
                 <StackPanel>
-                    
+                    <Grid Height="377">
+                        <ComboBox Name="Cones" Height="20" Width="100" Margin="74,28,612,329"/>
+                    </Grid>
                 </StackPanel>
             </TabItem>
         </TabControl>

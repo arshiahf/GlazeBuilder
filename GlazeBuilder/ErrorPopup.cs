@@ -12,11 +12,13 @@ namespace GlazeBuilder
     {
         public ErrorPopup(string message)
         {
-            Window error = new Window();
-            error.Width = 350;
-            error.Height = 250;
+            Window error = new Window
+            {
+                Width = 350,
+                Height = 250
+            };
 
-            Grid grid = new Grid();
+        Grid grid = new Grid();
             grid.RowDefinitions.Add(new RowDefinition());
             grid.RowDefinitions.Add(new RowDefinition());
             grid.RowDefinitions.Add(new RowDefinition());

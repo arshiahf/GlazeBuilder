@@ -23,10 +23,13 @@ namespace GlazeBuilder
         public MainWindow()
         {
             InitializeComponent();
-            this.matBase = new MaterialDatabase("Materials.csv", this);
+            //this.MaterialDatabase = new MaterialDatabase("Materials.csv", this);
+            this.GlazeDatabase = new GlazeDatabase();
+            Cones.ItemsSource = GlazeDatabase.Cones.Keys;
         }
 
-        private MaterialDatabase matBase { get; set; }
+        private MaterialDatabase MaterialDatabase { get; set; }
+        private GlazeDatabase GlazeDatabase { get; set; }
 
         public void SubmitMaterial_Click(object sender, RoutedEventArgs e)
         {
