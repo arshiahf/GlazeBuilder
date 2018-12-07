@@ -462,6 +462,11 @@
 		"Silicon": 1,
 		"Oxygen": 4
 	},
+	"Zirconium Dioxide": {
+		"Formula": "ZrO2",
+		"Zirconium": 1,
+		"Oxygen": 2
+	},
 	"Zirconium Silicate": {
 		"Formula": "ZrSiO4",
 		"Zirconium": 1,

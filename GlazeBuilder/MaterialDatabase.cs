@@ -26,11 +26,12 @@ namespace GlazeBuilder
 
         private void PopulateAllMaterials(string filename)
         {
-            string[] allMaterialsText = System.IO.File.ReadAllLines(filename);
+            string all_materials_text = System.IO.File.ReadAllText(filename);
+            JObject all_materials_json_object = JObject.Parse(all_materials_text);
 
-            foreach (string material in allMaterialsText)
+            foreach (JProperty material in all_materials_json_object.Children())
             {
-                Materials.Add(material, new Material(GlazeChemistry.LookupMolecule(material)));
+                Materials.Add(material.Name, new Material(material));
             }
 
             MainWindow.MaterialsList.ItemsSource = Materials;
@@ -88,26 +89,13 @@ namespace GlazeBuilder
 
     class Material
     {
-        public Material(GenericMolecule molecule)
+        public Material(JProperty material_json_property)
         {
-            if (molecule.CompoundMolecule != null)
-            {
-                CompoundMolecule = molecule.CompoundMolecule;
-                SimpleMolecule = null;
-            }
-            else if (molecule.SimpleMolecule != null)
-            {
-                SimpleMolecule = molecule.SimpleMolecule;
-                CompoundMolecule = null;
-            }
-            else
-            {
-                SimpleMolecule = null;
-                CompoundMolecule = null;
-            }
+            Name = material_json_property.Name;
         }
 
-        CompoundMolecule CompoundMolecule { get; set; }
-        SimpleMolecule SimpleMolecule { get; set; }
+        string Name { get; set; }
+        List<CompoundMolecule> CompoundMolecules { get; set; }
+        List<SimpleMolecule> SimpleMolecules { get; set; }
     }
 }
