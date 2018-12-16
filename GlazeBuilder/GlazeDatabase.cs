@@ -6,19 +6,20 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using GlazeChemistry;
 
 namespace GlazeBuilder
 {
-    class GlazeDatabase
+    public class GlazeDatabase
     {
         public GlazeDatabase()
         {
-            GlazeChemistry = new GlazeChemistry("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
+            ChemicalDatabase= new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
             PopulateCones("PyrometricCones.json");
         }
 
-        public Dictionary<string, PyrometricCone> Cones { get; set; }
-        GlazeChemistry GlazeChemistry { get; set; }
+        Dictionary<string, PyrometricCone> Cones { get; set; }
+        ChemicalDatabase ChemicalDatabase { get; set; }
 
         void PopulateCones(string pyrometric_cones_filename)
         {

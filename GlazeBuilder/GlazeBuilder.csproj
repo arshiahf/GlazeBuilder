@@ -105,6 +105,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CompoundMolecule.cs" />
+    <Compile Include="Element.cs" />
+    <Compile Include="MolecularDictionary.cs" />
+    <Compile Include="PeriodicTable.cs" />
+    <Compile Include="SimpleMolecule.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -113,7 +118,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GlazeChemistry.cs" />
+    <Compile Include="ChemicalDatabase.cs" />
     <Compile Include="GlazeDatabase.cs" />
     <Compile Include="ErrorPopup.cs" />
     <Compile Include="MaterialDatabase.cs" />
@@ -123,6 +128,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Molecule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
