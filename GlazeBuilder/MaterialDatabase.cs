@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using GlazeChemistry;
 
 namespace GlazeBuilder
 {
@@ -20,7 +21,7 @@ namespace GlazeBuilder
             PopulateAllMaterials(matFile);
         }
         
-        public GlazeChemistry GlazeChemistry { get; set; }
+        public ChemicalDatabase ChemicalDatabase { get; set; }
         private MainWindow MainWindow { get; set; }
         public Dictionary<string, Material> Materials { get; set; }
 
