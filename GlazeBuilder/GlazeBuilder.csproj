@@ -107,6 +107,7 @@
     </ApplicationDefinition>
     <Compile Include="CompoundMolecule.cs" />
     <Compile Include="Element.cs" />
+    <Compile Include="Material.cs" />
     <Compile Include="MolecularDictionary.cs" />
     <Compile Include="PeriodicTable.cs" />
     <Compile Include="SimpleMolecule.cs" />

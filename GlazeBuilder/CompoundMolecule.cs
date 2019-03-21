@@ -14,7 +14,7 @@ namespace GlazeChemistry
     {
         // Constructor
         // Requires a JSON property with the compound molecule's information, a Periodic Table, and a dictionary defining all known simple molecules.
-        public CompoundMolecule(JProperty compound_molecule_json_property, PeriodicTable periodic_table, Dictionary<string, SimpleMolecule> simple_molecule_dictionary)
+        public CompoundMolecule(JProperty compound_molecule_json_property, ref PeriodicTable periodic_table, Dictionary<string, SimpleMolecule> simple_molecule_dictionary)
         {
             // Defines the local copies of the Period Table and the dictionary of simple molecules.
             PeriodicTable = periodic_table;

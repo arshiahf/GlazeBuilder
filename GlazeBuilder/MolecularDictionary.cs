@@ -21,13 +21,13 @@ namespace GlazeChemistry
             // Iterates through all molecules in the simple molecules JSON object and adds each one to the simple molecules dictionary.
             foreach (JProperty simple_molecule in simple_molecules_json.Children())
             {
-                SimpleMolecules.Add(simple_molecule.Name, new SimpleMolecule(simple_molecule, periodic_table));
+                SimpleMolecules.Add(simple_molecule.Name, new SimpleMolecule(simple_molecule, ref periodic_table));
             }
 
             // Iterates through all molecules in the compound molecules JSON object and adds each one to the compound molecules dictionary.
             foreach (JProperty compound_molecule in compound_molecules_json.Children())
             {
-                CompoundMolecules.Add(compound_molecule.Name, new CompoundMolecule(compound_molecule, periodic_table, SimpleMolecules));
+                CompoundMolecules.Add(compound_molecule.Name, new CompoundMolecule(compound_molecule, ref periodic_table, SimpleMolecules));
             }
         }
 

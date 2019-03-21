@@ -12,7 +12,7 @@ namespace GlazeChemistry
     {
         // Constructor
         // Takes in a JSON property containing the info of the molecule and a Periodic Table of Elements to define that molecule's atomic structure.
-        public SimpleMolecule(JProperty simple_molecule_json_property, PeriodicTable periodic_table)
+        public SimpleMolecule(JProperty simple_molecule_json_property, ref PeriodicTable periodic_table)
         {
             // Defines its internal Periodic Table with the input Periodic Table.
             PeriodicTable = periodic_table;
