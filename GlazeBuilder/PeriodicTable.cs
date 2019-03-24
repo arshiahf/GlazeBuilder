@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 namespace GlazeChemistry
 {
     // A Periodic Table of the Elements.
-    class PeriodicTable
+    public class PeriodicTable
     {
         // Constructor
         // Requires a JSON object with all elements.

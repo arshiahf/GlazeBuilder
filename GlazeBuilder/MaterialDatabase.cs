@@ -12,79 +12,43 @@ using GlazeChemistry;
 
 namespace GlazeBuilder
 {
-    class MaterialDatabase
+    public class MaterialDatabase
     {
-        public MaterialDatabase(string matFile, MainWindow window)
+        public MaterialDatabase(string raw_chemical_file, string frit_file, string feldspar_file)
         {
+            ChemicalDatabase = new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
             Materials = new Dictionary<string, Material>();
-            this.MainWindow = window;
-            PopulateAllMaterials(matFile);
+            PopulateAllMaterials<RawChemical>(raw_chemical_file);
+            //PopulateAllMaterials<Frit>(frit_file);
+            //PopulateAllMaterials<Feldspar>(feldspar_file);
         }
         
-        public ChemicalDatabase ChemicalDatabase { get; set; }
-        private MainWindow MainWindow { get; set; }
+        ChemicalDatabase ChemicalDatabase { get; set; }
         public Dictionary<string, Material> Materials { get; set; }
 
-        private void PopulateAllMaterials(string filename)
+        private void PopulateAllMaterials<T>(string known_materials_filename) where T: Material
         {
-            string all_materials_text = System.IO.File.ReadAllText(filename);
-            JObject all_materials_json_object = JObject.Parse(all_materials_text);
+            string all_materials_text = System.IO.File.ReadAllText(known_materials_filename);
+            JContainer all_materials_json_object;
 
-            foreach (JProperty material in all_materials_json_object.Children())
+            if (typeof(T) == typeof(RawChemical))
             {
-                Materials.Add(material.Name, new Material(material));
-            }
+                all_materials_json_object = JArray.Parse(all_materials_text);
 
-            MainWindow.MaterialsList.ItemsSource = Materials;
-            MainWindow.MaterialsList.DisplayMemberPath = "Name";
-        }
-
-        /*
-        private void completeKey(ref string partial)
-        {
-            List<string> options = new List<string>();
-
-            foreach (Material mat in Materials)
-            {
-                if (mat.MatName.ToLower().StartsWith(partial.ToLower()))
+                foreach (JToken material in all_materials_json_object.Children())
                 {
-                    options.Add();
+                    Materials.Add(material.ToString(), (T)Activator.CreateInstance(typeof(T), material, ChemicalDatabase));
                 }
-            }
-
-            if (options.Count == 1)
-            {
-                partial = options[0];
-            }
-            else if (options.Count > 1)
-            {
-                MainWin.OverflowMaterials.ItemsSource = options;
-                MainWin.InputMaterial.Text = null;
-                MainWin.OverflowMaterials.Visibility = Visibility.Visible;
-                MainWin.InputMaterial.Visibility = Visibility.Hidden;
             }
             else
             {
+                all_materials_json_object = JObject.Parse(all_materials_text);
 
-            }
-        }
-
-        public void findMaterial(string material)
-        {
-            completeKey(ref material);
-            foreach (Material mat in Materials)
-            {
-                if (material == mat.)
+                foreach (JProperty material in all_materials_json_object.Children())
                 {
-                    MainWin.InputMaterial.Text = null;
-                }
-                else
-                {
-                    ErrorPopup pop = new ErrorPopup("ERROR: " + material + " not found in materials database.\n" +
-                        "Please select valid material from list or enter new material.\n");
+                    Materials.Add(material.Name, (T)Activator.CreateInstance(typeof(T), material, ChemicalDatabase));
                 }
             }
         }
-        */
     }
 }

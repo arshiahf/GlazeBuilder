@@ -107,9 +107,14 @@
     </ApplicationDefinition>
     <Compile Include="CompoundMolecule.cs" />
     <Compile Include="Element.cs" />
+    <Compile Include="Feldspar.cs" />
+    <Compile Include="Frit.cs" />
+    <Compile Include="Glaze.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="MolecularDictionary.cs" />
     <Compile Include="PeriodicTable.cs" />
+    <Compile Include="PyrometricCone.cs" />
+    <Compile Include="RawChemical.cs" />
     <Compile Include="SimpleMolecule.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

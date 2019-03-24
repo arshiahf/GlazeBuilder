@@ -9,7 +9,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GlazeBuilder
 {
-    class Glaze
+    public class Glaze
     {
         public Glaze()
         {

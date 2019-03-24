@@ -26,6 +26,7 @@ namespace GlazeBuilder
             //this.MaterialDatabase = new MaterialDatabase("Materials.csv", this);
             this.GlazeDatabase = new GlazeDatabase();
             Cones.ItemsSource = GlazeDatabase.Cones.Keys;
+            MaterialsList.ItemsSource = GlazeDatabase.MaterialDatabase.Materials.Keys;
         }
 
         private MaterialDatabase MaterialDatabase { get; set; }

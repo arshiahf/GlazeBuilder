@@ -17,7 +17,6 @@ namespace GlazeChemistry
         public CompoundMolecule(JProperty compound_molecule_json_property, ref PeriodicTable periodic_table, Dictionary<string, SimpleMolecule> simple_molecule_dictionary)
         {
             // Defines the local copies of the Period Table and the dictionary of simple molecules.
-            PeriodicTable = periodic_table;
             SimpleMolecules = simple_molecule_dictionary;
 
             // Instantiates the SubMolecules, AdditionalElements, and MolecularWeight properties to avoid errors.
@@ -31,7 +30,7 @@ namespace GlazeChemistry
 
             // Casts the JSON property's value as a JSON object then builds the molecule from that object.
             JObject compound_molecule_object = compound_molecule_json_property.Value.ToObject<JObject>();
-            BuildMolecule(compound_molecule_object);
+            BuildMolecule(compound_molecule_object, ref periodic_table);
         }
 
         // Properties
@@ -45,7 +44,7 @@ namespace GlazeChemistry
 
         // Function
         // Takes the JSON object with all the molecule's information and extracts the data into the molecule's properties.
-        public override void BuildMolecule(JObject molecule_object)
+        public override void BuildMolecule(JObject molecule_object, ref PeriodicTable periodic_table)
         {
             // Iterates through the JSON object's children and extracts each value into a molecular Property.
             foreach (JProperty property in molecule_object.Children())
@@ -73,10 +72,10 @@ namespace GlazeChemistry
                         }
                     }
                 }
-                else if (PeriodicTable.Contains(property.Name))
+                else if (periodic_table.Contains(property.Name))
                 {
                     // Adds any floating elements after checking for them in the Periodic Table.
-                    AdditionalElements.Add(new Tuple<Element, int>(PeriodicTable.FindElement(property.Name), Convert.ToInt32(property.Value)));
+                    AdditionalElements.Add(new Tuple<Element, int>(periodic_table.FindElement(property.Name), Convert.ToInt32(property.Value)));
                 }
             }
 

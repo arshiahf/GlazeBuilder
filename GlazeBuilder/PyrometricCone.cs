@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 
 namespace GlazeBuilder
 {
-    class PyrometricCone
+    public class PyrometricCone
     {
         public PyrometricCone(JProperty cone_json_property)
         {

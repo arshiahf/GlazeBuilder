@@ -9,15 +9,21 @@ using GlazeChemistry;
 
 namespace GlazeBuilder
 {
-    class Material
+    public abstract class Material
     {
-        public Material(JProperty material_json_property)
+        public Material(JToken material_properties, ChemicalDatabase chemical_database)
         {
-            Name = material_json_property.Name;
+            BuildMaterial(material_properties, ref chemical_database);
+        }
+        public Material(JProperty material_properties, ChemicalDatabase chemical_database)
+        {
+            BuildMaterial(material_properties, ref chemical_database);
         }
 
-        string Name { get; set; }
-        List<CompoundMolecule> CompoundMolecules { get; set; }
-        List<SimpleMolecule> SimpleMolecules { get; set; }
+        public string Name { get; set; }
+
+
+        virtual public void BuildMaterial(JToken material_object, ref ChemicalDatabase chemical_database) { }
+        virtual public void BuildMaterial(JProperty material_object, ref ChemicalDatabase chemical_database) { }
     }
 }

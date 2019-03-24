@@ -14,16 +14,20 @@ namespace GlazeBuilder
     {
         public GlazeDatabase()
         {
-            ChemicalDatabase= new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
+            MaterialDatabase = new MaterialDatabase("MaterialsRawChemicals.json", "MaterialsFrits.json", "MaterialsFeldspars.json");
+
+            Cones = new Dictionary<string, PyrometricCone>();
             PopulateCones("PyrometricCones.json");
+
+            Glazes = new Dictionary<string, Glaze>();
         }
 
-        Dictionary<string, PyrometricCone> Cones { get; set; }
-        ChemicalDatabase ChemicalDatabase { get; set; }
+        public Dictionary<string, PyrometricCone> Cones { get; set; }
+        public MaterialDatabase MaterialDatabase { get; set; }
+        public Dictionary<string, Glaze> Glazes { get; set; }
 
         void PopulateCones(string pyrometric_cones_filename)
         {
-            Cones = new Dictionary<string, PyrometricCone>();
             string all_cones_raw_json = System.IO.File.ReadAllText(pyrometric_cones_filename);
             JObject cones_json = JObject.Parse(all_cones_raw_json);
 
@@ -32,5 +36,13 @@ namespace GlazeBuilder
                 Cones.Add(cone_json_property.Name, new PyrometricCone(cone_json_property));
             }
         }
+
+        void PopulateKnownGlazes(string known_glazes_filename)
+        {
+            string all_materials_text = System.IO.File.ReadAllText(known_glazes_filename);
+            JObject all_materials_json_object = JObject.Parse(all_materials_text);
+        }
+
+
     }
 }

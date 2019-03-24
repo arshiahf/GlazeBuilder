@@ -14,9 +14,6 @@ namespace GlazeChemistry
         // Takes in a JSON property containing the info of the molecule and a Periodic Table of Elements to define that molecule's atomic structure.
         public SimpleMolecule(JProperty simple_molecule_json_property, ref PeriodicTable periodic_table)
         {
-            // Defines its internal Periodic Table with the input Periodic Table.
-            PeriodicTable = periodic_table;
-
             // Instantiates its Formula and MolecularWeight properties so they can be used later without causing an error.
             Formula = new List<Tuple<Element, int>>();
             MolecularWeight = 0.0;
@@ -27,7 +24,7 @@ namespace GlazeChemistry
 
             // Casts the value of the JSON property to a JSON object and uses that new JSON object to build the molecule.
             JObject simple_molecule_object = simple_molecule_json_property.Value.ToObject<JObject>();
-            BuildMolecule(simple_molecule_object);
+            BuildMolecule(simple_molecule_object, ref periodic_table);
         }
 
         // Properties
@@ -36,7 +33,7 @@ namespace GlazeChemistry
 
         // Function
         // Takes in a JSON object to build a simple molecule from its assorted values.
-        public override void BuildMolecule(JObject molecule_object)
+        public override void BuildMolecule(JObject molecule_object, ref PeriodicTable periodic_table)
         {
             // Iterates through the JSON objects properties to populate the information of the molecule.
             foreach (JProperty property in molecule_object.Children())
@@ -53,10 +50,10 @@ namespace GlazeChemistry
                     // Extracts the full chemical formula in text string form.
                     FullFormula = property.Value.ToString();
                 }
-                else if (PeriodicTable.Contains(property.Name))
+                else if (periodic_table.Contains(property.Name))
                 {
                     // Searches the Periodic Table for each element, and if it finds it adds it and its relative abundance to the chemical formula.
-                    Formula.Add(new Tuple<Element, int>(PeriodicTable.FindElement(property.Name), Convert.ToInt32(property.Value)));
+                    Formula.Add(new Tuple<Element, int>(periodic_table.FindElement(property.Name), Convert.ToInt32(property.Value)));
                 }
             }
 
