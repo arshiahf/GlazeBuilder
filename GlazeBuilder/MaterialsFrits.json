@@ -1,6 +1,26 @@
 {
 	"Ferro Frit 3110-2": {
 		"Fluxes": {
+			"Potash": 0.065,
+			"Soda": 0.642,
+			"Calcium Oxide": 0.293,
+			"Magnesium Oxide": 0,
+			"Barium Oxide": 0,
+			"Zinc Oxide": 0,
+			"Lithium Oxide": 0,
+			"Strontium Oxide": 0,
+      		"Lead Oxide": 0
+		},
+		"Non-Fluxes:": {
+			"Alumina": 0.095,
+			"Boric Oxide": 0.099,
+			"Zirconium Dioxide": 0,
+			"Fluorine": 0,
+			"Silica": 3.031
+		}
+	},
+	"Frit 3124-2": {
+		"Fluxes": {
 			"Potash": ,
 			"Soda": ,
 			"Calcium Oxide": ,
@@ -19,7 +39,4 @@
 			"Silica": 
 		}
 	},
-	"Frit 3124-2": {
-
-	}
 }

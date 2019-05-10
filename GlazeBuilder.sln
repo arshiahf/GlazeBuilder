@@ -1,9 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2042
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlazeBuilder", "GlazeBuilder\GlazeBuilder.csproj", "{57AA7037-7F53-48B2-A20D-33EF4D308C54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B0338B-B876-4516-8DEE-C36585704433}"
+	ProjectSection(SolutionItems) = preProject
+		GlazeBuilder\CompoundMolecules.json = GlazeBuilder\CompoundMolecules.json
+		GlazeBuilder\GeneratedGlazes.json = GlazeBuilder\GeneratedGlazes.json
+		GlazeBuilder\KnownGlazes.json = GlazeBuilder\KnownGlazes.json
+		GlazeBuilder\MaterialsFeldspars.json = GlazeBuilder\MaterialsFeldspars.json
+		GlazeBuilder\MaterialsFrits.json = GlazeBuilder\MaterialsFrits.json
+		GlazeBuilder\MaterialsRawChemicals.json = GlazeBuilder\MaterialsRawChemicals.json
+		GlazeBuilder\PeriodicTableElements.json = GlazeBuilder\PeriodicTableElements.json
+		GlazeBuilder\PyrometricCones.json = GlazeBuilder\PyrometricCones.json
+		GlazeBuilder\SimpleMolecules.json = GlazeBuilder\SimpleMolecules.json
+		GlazeBuilder\UMFLimits.json = GlazeBuilder\UMFLimits.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

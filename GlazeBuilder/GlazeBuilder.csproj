@@ -124,7 +124,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ChemicalDatabase.cs" />
+    <Compile Include="ChemicalDatabase.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="GlazeDatabase.cs" />
     <Compile Include="ErrorPopup.cs" />
     <Compile Include="MaterialDatabase.cs" />
