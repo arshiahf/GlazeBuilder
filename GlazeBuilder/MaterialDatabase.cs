@@ -14,13 +14,12 @@ namespace GlazeBuilder
 {
     public class MaterialDatabase
     {
-        public MaterialDatabase(string raw_chemical_file, string frit_file, string feldspar_file)
+        public MaterialDatabase(string raw_chemical_file, string compound_chemical_file)
         {
             ChemicalDatabase = new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
             Materials = new Dictionary<string, Material>();
             PopulateAllMaterials<RawChemical>(raw_chemical_file);
-            //PopulateAllMaterials<Frit>(frit_file);
-            //PopulateAllMaterials<Feldspar>(feldspar_file);
+            //PopulateAllMaterials<CompoundChemical>(compound_chemical_file);
         }
         
         ChemicalDatabase ChemicalDatabase { get; set; }

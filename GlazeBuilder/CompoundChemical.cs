@@ -9,9 +9,9 @@ using GlazeChemistry;
 
 namespace GlazeBuilder
 {
-    class Feldspar : Material
+    class CompoundChemical : Material
     {
-        public Feldspar(JProperty material_properties, ChemicalDatabase chemical_database) : base(material_properties, chemical_database)
+        public CompoundChemical(JProperty material_properties, ChemicalDatabase chemical_database) : base(material_properties, chemical_database)
         {
             BuildMaterial(material_properties, ref chemical_database);
         }

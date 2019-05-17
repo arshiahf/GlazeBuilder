@@ -1,0 +1,280 @@
+{
+  "Ferro Frit 3110": {
+    "Alternate Names": [
+      "3110-2",
+      "F3110",
+      "Frit KFG 4110",
+      "Ferro Crystal Frit",
+      "Ferro Frit 3110-2"
+    ],
+    "Fluxes": {
+      "Potash": 0.065,
+      "Soda": 0.642,
+      "Calcium Oxide": 0.293
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.095,
+      "Boric Oxide": 0.099
+    },
+    "Glass-Forming": {
+      "Silica": 3.031
+    }
+  },
+  "Ferro Frit 3124": {
+    "Alternate Names": [
+      "3124-2",
+      "F3124",
+      "Frit 3124-2",
+      "Ferro Frit 3124-2"
+    ],
+    "Fluxes": {
+      "Potash": 0.020,
+      "Soda": 0.283,
+      "Calcium Oxide": 0.697
+    },
+    "Flow/Viscosity:": {
+      "Alumina": 0.269,
+      "Boric Oxide": 0.541
+    },
+    "Glass-Forming": {
+      "Silica": 2.505
+    }
+  },
+  "Ferro Frit 3134": {
+    "Alternate Names": [
+      "3134-2",
+      "F3134",
+      "Frit 3134-2",
+      "Ferro Frit 3134-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.680,
+      "Soda": 0.320
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.038,
+      "Boric Oxide": 0.640
+    },
+    "Glass-Forming": {
+      "Silica": 1.483
+    }
+  },
+  "Ferro Frit 3195": {
+    "Alternate Names": [
+      "3195-2",
+      "F3195",
+      "Frit 3195-2",
+      "Ferro Frit 3195-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.688,
+      "Soda": 0.312
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.399,
+      "Boric Oxide": 1.104
+    },
+    "Glass-Forming": {
+      "Silica": 2.734
+    }
+  },
+  "Ferro Frit 3269": {
+    "Alternate Names": [
+      "3269-2",
+      "F3269",
+      "Frit 3269-2",
+      "Ferro Frit 3269-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.027,
+      "Potash": 0.287,
+      "Soda": 0.644,
+      "Zinc Oxide": 0.043
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.442,
+      "Boric Oxide": 0.787
+    },
+    "Glass-Forming": {
+      "Silica": 3.100
+    },
+    "Other": {
+      "Fluorine": 0.287
+    }
+  },
+  "Ferro Frit 3270": {
+    "Alternate Names": [
+      "3270-2",
+      "F3270",
+      "Frit 3270-2",
+      "Ferro Frit 3270-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.462,
+      "Potash": 0.175,
+      "Soda": 0.364
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.248,
+      "Boric Oxide": 0.990
+    },
+    "Glass-Forming": {
+      "Silica": 2.423
+    }
+  },
+  "Ferro Frit 3278": {
+    "Alternate Names": [
+      "3278-2",
+      "F3278",
+      "Frit 3278-2",
+      "Ferro Frit 3278-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.334,
+      "Soda": 0.666
+    },
+    "Flow/Viscosity": {
+      "Boric Oxide": 0.853
+    },
+    "Glass-Forming": {
+      "Silica": 2.561
+    }
+  },
+  "Ferro Frit 3292": {
+    "Alternate Names": [
+      "3292-2",
+      "F3292",
+      "Frit 3292-2",
+      "Ferro Frit 3292-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.540,
+      "Lithium Oxide": 0.041,
+      "Magneium Oxide": 0.050,
+      "Potash": 0.096,
+      "Soda": 0.140,
+      "Strontium Oxide": 0.134
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.303,
+      "Boric Oxide": 0.238
+    },
+    "Glass-Forming": {
+      "Silica": 2.913
+    }
+  },
+  "Ferro Frit 5301": {
+    "Alternate Names": [
+      "5301-2",
+      "F5301",
+      "Frit 501E34",
+      "Frit 5301-2",
+      "Ferro Frit 5301-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.129,
+      "Potash": 0.179,
+      "Soda": 0.692
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.362,
+      "Boric Oxide": 0.548
+    },
+    "Glass-Forming": {
+      "Silica": 2.263
+    },
+    "Other": {
+      "Fluorine": 1.448
+    }
+  },
+  "Ferro Frit CC-250": {
+    "Alternate Names": [
+      "CC250-2",
+      "Frit CC250",
+      "Frit CC250-2",
+      "Ferro Frit CC-250-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.695,
+      "Potash": 0.016,
+      "Soda": 0.289
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.297,
+      "Boric Oxide": 0.661
+    },
+    "Glass-Forming": {
+      "Silica": 2.559
+    }
+  },
+  "Ferro Frit CC-263": {
+    "Alternate Names": [
+      "CC263-2",
+      "Frit CC263",
+      "Frit CC268",
+      "Frit CC-268",
+      "Ferro Frit CC263-2"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": 0.560,
+      "Magnesium Oxide": 0.087,
+      "Potash": 0.111,
+      "Soda": 0.141,
+      "Strontium Oxide": 0.101
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.377,
+      "Boric Oxide": 1.003
+    },
+    "Glass-Forming": {
+      "Silica": 2.905
+    },
+    "Other": {
+      "Zirconium Dioxide": 0.014
+    }
+  },
+  "Ferro Frit CC-272": {
+    "Alternate Names": [
+      "CC272-2",
+      "Frit CC-272",
+      "Frit CC-272-2",
+      "Ferro Frit CC-272-2"
+    ],
+    "Fluxes": {
+      "Barium Oxide": 0.051,
+      "Calcium Oxide": 0.420,
+      "Lithium Oxide": 0.053,
+      "Magnesium Oxide": 0.039,
+      "Potash": 0.083,
+      "Soda": 0.127,
+      "Strontium Oxide": 0.227
+    },
+    "Flow/Viscosity": {
+      "Alumina": 0.231,
+      "Boric Oxide": 0.338
+    },
+    "Glass-Forming": {
+      "Silica": 3.266
+    },
+    "Other": {
+      "Zirconium Dioxide": 0.013
+    }
+  },
+  "": {
+    "Alternate Names": [
+
+    ],
+    "Fluxes": {
+
+    },
+    "Flow/Viscosity": {
+
+    },
+    "Glass-Forming": {
+
+    },
+    "Other": {
+
+    }
+  }
+}

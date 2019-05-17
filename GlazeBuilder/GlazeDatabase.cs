@@ -15,7 +15,7 @@ namespace GlazeBuilder
     {
         public GlazeDatabase()
         {
-            MaterialDatabase = new MaterialDatabase("MaterialsRawChemicals.json", "MaterialsFrits.json", "MaterialsFeldspars.json");
+            MaterialDatabase = new MaterialDatabase("MaterialsRawChemicals.json", "MaterialsCompoundChemicals.json");
 
             Cones = new Dictionary<string, PyrometricCone>();
             PopulateCones("PyrometricCones.json");

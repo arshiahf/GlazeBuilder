@@ -107,8 +107,7 @@
     </ApplicationDefinition>
     <Compile Include="CompoundMolecule.cs" />
     <Compile Include="Element.cs" />
-    <Compile Include="Feldspar.cs" />
-    <Compile Include="Frit.cs" />
+    <Compile Include="CompoundChemical.cs" />
     <Compile Include="Glaze.cs" />
     <Compile Include="Material.cs" />
     <Compile Include="MolecularDictionary.cs" />
