@@ -15,14 +15,19 @@ namespace GlazeBuilder
             Window error = new Window
             {
                 Width = 350,
-                Height = 250
+                Height = 250,
+                WindowStartupLocation = WindowStartupLocation.CenterScreen
             };
 
-        Grid grid = new Grid();
-            grid.RowDefinitions.Add(new RowDefinition());
-            grid.RowDefinitions.Add(new RowDefinition());
-            grid.RowDefinitions.Add(new RowDefinition());
-            grid.ColumnDefinitions.Add(new ColumnDefinition());
+            Grid grid = new Grid();
+            for (int i = 0; i < 3; i++)
+            {
+                grid.RowDefinitions.Add(new RowDefinition());
+            }
+            for (int i = 0; i < 1; i++)
+            {
+                grid.ColumnDefinitions.Add(new ColumnDefinition());
+            }
 
             TextBlock errorText = new TextBlock();
             errorText.ContentStart.InsertTextInRun(message);

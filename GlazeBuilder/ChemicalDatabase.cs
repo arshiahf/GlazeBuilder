@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 /*
@@ -19,7 +18,7 @@ namespace GlazeChemistry
 {
     // GlazeChemistry manages all the purely chemical functionality of the GlazeBuilder namespace.
     // It controls the elements, molecules, and atomic/molecular weights of each component piece.
-    class ChemicalDatabase
+    public class ChemicalDatabase
     {
         // Constructor
         // Requires, in order, a file for the elements, a file for the simple molecules, and a file for the compound molecules, all in JSON.

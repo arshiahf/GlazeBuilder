@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
@@ -14,16 +15,24 @@ namespace GlazeBuilder
     {
         public GlazeDatabase()
         {
-            ChemicalDatabase= new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
+            MaterialDatabase = new MaterialDatabase("MaterialsRawChemicals.json", "MaterialsCompoundChemicals.json");
+
+            Cones = new Dictionary<string, PyrometricCone>();
             PopulateCones("PyrometricCones.json");
+
+            UMFLimits = new Dictionary<string, UnityMolecularFormulaLimit>();
+            InputLimits("UMFLimits.json");
+
+            Glazes = new Dictionary<string, Glaze>();
         }
 
-        Dictionary<string, PyrometricCone> Cones { get; set; }
-        ChemicalDatabase ChemicalDatabase { get; set; }
+        public Dictionary<string, PyrometricCone> Cones { get; set; }
+        public MaterialDatabase MaterialDatabase { get; set; }
+        public Dictionary<string, Glaze> Glazes { get; set; }
+        private Dictionary<string, UnityMolecularFormulaLimit> UMFLimits { get; set; }
 
         void PopulateCones(string pyrometric_cones_filename)
         {
-            Cones = new Dictionary<string, PyrometricCone>();
             string all_cones_raw_json = System.IO.File.ReadAllText(pyrometric_cones_filename);
             JObject cones_json = JObject.Parse(all_cones_raw_json);
 
@@ -32,65 +41,130 @@ namespace GlazeBuilder
                 Cones.Add(cone_json_property.Name, new PyrometricCone(cone_json_property));
             }
         }
-    }
 
-    class Glaze
-    {
-        public Glaze()
+        void InputLimits(string limits_filename)
         {
+            string all_limits_text = System.IO.File.ReadAllText(limits_filename);
+            JObject all_limits_json_object = JObject.Parse(all_limits_text);
 
-        }
-
-        // Double is the percentage of 1 of the material in the glaze
-        List<Tuple<double, Material>> Materials { get; set; }
-        PyrometricCone Cone { get; set; }
-        Color FiredColor { get; set; }
-        bool Reduction { get; set; }
-    }
-
-    class PyrometricCone
-    {
-        public PyrometricCone(JProperty cone_json_property)
-        {
-            MakeCone(cone_json_property);
-        }
-
-        string Name { get; set; }
-        Dictionary<string, int> SmallCones { get; set; }
-        Dictionary<string, int> LargeCones { get; set; }
-        Dictionary<string, int> PCECones { get; set; }
-
-        private void MakeCone(JProperty cone_json_property)
-        {
-            Name = cone_json_property.Name;
-            
-            foreach (JProperty cone_json_subproperty in cone_json_property.Value.ToObject<JObject>().Children())
+            foreach (JProperty limit_json_subproperty in all_limits_json_object.Children())
             {
-                if (cone_json_subproperty.Name == "Large Cones")
+                UnityMolecularFormulaLimit temp_range = new UnityMolecularFormulaLimit();
+                foreach (JProperty umf_property in limit_json_subproperty.Value.ToObject<JObject>().Children())
                 {
-                    LargeCones = new Dictionary<string, int>();
-                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
+                    if (umf_property.Name == "Cones")
                     {
-                        LargeCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
+                        foreach(JToken cone_token in umf_property.Value.ToArray<JToken>())
+                        {
+                            temp_range.Cones.Add(Cones[cone_token.ToString()]);
+                        }
+                    }
+                    else if (umf_property.Name == "Appearance")
+                    {
+                        foreach(JProperty appearance_property in umf_property.Value.ToObject<JObject>().Children())
+                        {
+                            foreach (JProperty chemical_group_property in appearance_property.Value.ToObject<JObject>().Children())
+                            {
+                                foreach (JProperty chemical_property in chemical_group_property.Value.ToObject<JObject>().Children())
+                                {
+                                    double temporary_minimum = 0;
+                                    double temporary_maximum = 0;
+                                    foreach (JProperty numerical_property in chemical_property.Value.ToObject<JObject>().Children())
+                                    {
+                                        if (numerical_property.Name == "Minimum")
+                                        {
+                                            temporary_minimum = Convert.ToDouble(numerical_property.Value);
+                                        }
+                                        else
+                                        {
+                                            temporary_maximum = Convert.ToDouble(numerical_property.Value);
+                                        }
+                                    }
+                                    try
+                                    {
+                                        ((Dictionary<string, Tuple<double, double>>)((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
+                                    }
+                                    catch(NullReferenceException) // Catching because exception is called due to generalizing, not an actual error
+                                    { }
+                                    }
+                            }
+                        }
                     }
                 }
-                else if (cone_json_subproperty.Name == "Small Cones")
-                {
-                    SmallCones = new Dictionary<string, int>();
-                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
-                    {
-                        SmallCones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
-                    }
-                }
-                else if (cone_json_subproperty.Name == "P.C.E. Cones")
-                {
-                    PCECones = new Dictionary<string, int>();
-                    foreach (JProperty temperature_property in cone_json_subproperty.Value.ToObject<JObject>().Children())
-                    {
-                        PCECones.Add(temperature_property.Name, Convert.ToInt32(temperature_property.Value));
-                    }
-                }
+                UMFLimits.Add(limit_json_subproperty.Name, temp_range);
             }
         }
+
+        void PopulateKnownGlazes(string known_glazes_filename)
+        {
+            string all_materials_text = System.IO.File.ReadAllText(known_glazes_filename);
+            JObject all_materials_json_object = JObject.Parse(all_materials_text);
+        }
+    }
+
+    public class UnityMolecularFormulaLimit
+    {
+        public UnityMolecularFormulaLimit()
+        {
+            Cones = new List<PyrometricCone>();
+            Glossy = new GlazeAppearanceLimits();
+            Satin = new GlazeAppearanceLimits();
+            Matte = new GlazeAppearanceLimits();
+        }
+
+        public object this[string propertyName]
+        {
+            get
+            {
+                return Properties.Settings.Default.PropertyValues[propertyName];
+            }
+        }
+
+        public List<PyrometricCone> Cones;
+        public GlazeAppearanceLimits Glossy;
+        public GlazeAppearanceLimits Satin;
+        public GlazeAppearanceLimits Matte;
+    }
+
+    public class GlazeAppearanceLimits
+    {
+        public GlazeAppearanceLimits()
+        {
+            Fluxes = new Dictionary<string, Tuple<double, double>>();
+            FlowViscosity = new Dictionary<string, Tuple<double, double>>();
+            GlassForming = new Dictionary<string, Tuple<double, double>>();
+        }
+
+        public object this[string propertyName]
+        {
+            get
+            {
+                return GetProperty(propertyName);
+            }
+        }
+
+        public Dictionary<string, Tuple<double, double>> GetProperty(string property_name)
+        {
+            if (property_name == "Fluxes")
+            {
+                return Fluxes;
+            }
+            else if (property_name == "FlowViscosity")
+            {
+                return FlowViscosity;
+            }
+            else if (property_name == "GlassForming")
+            {
+                return GlassForming;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Dictionary<string, Tuple<double, double>> Fluxes;
+        public Dictionary<string, Tuple<double, double>> FlowViscosity;
+        public Dictionary<string, Tuple<double, double>> GlassForming;
     }
 }

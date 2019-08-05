@@ -1,0 +1,481 @@
+{
+	"Low Fire": {
+		"Cones": [
+			"Cone^04"
+		],
+		"Appearance": {
+			"Glossy": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.02,
+						"Maximum": 0.80
+					},
+					"CaO": {
+						"Minimum": 0.02,
+						"Maximum": 0.40
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.12
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.12
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.60
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.90
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.05,
+						"Maximum": 0.20
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 2.00
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 0.05,
+						"Maximum": 2.50
+					}
+				}
+			},
+			"Satin": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.35
+					},
+					"CaO": {
+						"Minimum": 0.02,
+						"Maximum": 0.40
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.30
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.30
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.25
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.20
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.30
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.10,
+						"Maximum": 0.30
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 1.00
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 1.00,
+						"Maximum": 2.50
+					}
+				}
+			},
+			"Matte": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.35
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.55
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.35
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.35
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.10,
+						"Maximum": 0.30
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 1.00,
+						"Maximum": 3.00
+					}
+				}
+			}
+		}
+	},
+	"Mid Fire": {
+		"Cones": [
+			"Cone^5",
+			"Cone^6"
+		],
+		"Appearance": {
+			"Glossy": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.60
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.60
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.10
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.60
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.10,
+						"Maximum": 0.30
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 1.00
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 1.50,
+						"Maximum": 4.00
+					}
+				}
+			},
+			"Satin": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.30
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.70
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.35
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.35
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.30
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.35
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.20,
+						"Maximum": 0.40
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 2.00,
+						"Maximum": 3.50
+					}
+				}
+			},
+			"Matte": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.30
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.80
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.45
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.10
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"PbO": {
+						"Minimum": 0.00,
+						"Maximum": 0.20
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.20,
+						"Maximum": 0.50
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 2.00,
+						"Maximum": 3.00
+					}
+				}
+			}
+		}
+	},
+	"High Fire": {
+		"Cones": [
+			"Cone^9",
+			"Cone^10"
+		],
+		"Appearance": {
+			"Glossy": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.50
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.80
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.15
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.20,
+						"Maximum": 0.50
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 2.00,
+						"Maximum": 6.00
+					}
+				}
+			},
+			"Satin": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.40
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.80
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.20
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.25,
+						"Maximum": 0.60
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.40
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 2.00,
+						"Maximum": 5.00
+					}
+				}
+			},
+			"Matte": {
+				"Fluxes": {
+					"KNaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.30
+					},
+					"CaO": {
+						"Minimum": 0.05,
+						"Maximum": 0.90
+					},
+					"MgO": {
+						"Minimum": 0.00,
+						"Maximum": 0.60
+					},
+					"BaO": {
+						"Minimum": 0.00,
+						"Maximum": 0.60
+					},
+					"ZnO": {
+						"Minimum": 0.00,
+						"Maximum": 0.50
+					},
+					"Li2O": {
+						"Minimum": 0.00,
+						"Maximum": 0.10
+					},
+					"SrO": {
+						"Minimum": 0.00,
+						"Maximum": 0.60
+					}
+				},
+				"Flow/Viscosity": {
+					"Al2O3": {
+						"Minimum": 0.25,
+						"Maximum": 0.80
+					},
+					"B2O3": {
+						"Minimum": 0.00,
+						"Maximum": 0.20
+					}
+				},
+				"Glass-Forming": {
+					"SiO2": {
+						"Minimum": 2.00,
+						"Maximum": 5.00
+					}
+				}
+			}
+		}
+	}
+}
