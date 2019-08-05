@@ -11,6 +11,7 @@ namespace GlazeBuilder
 {
     public abstract class Material
     {
+        /*
         public Material(JToken material_properties, ChemicalDatabase chemical_database)
         {
             BuildMaterial(material_properties, ref chemical_database);
@@ -19,6 +20,7 @@ namespace GlazeBuilder
         {
             BuildMaterial(material_properties, ref chemical_database);
         }
+        */
 
         public string Name { get; set; }
 

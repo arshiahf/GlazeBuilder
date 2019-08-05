@@ -11,7 +11,7 @@ namespace GlazeBuilder
 {
     class RawChemical : Material
     {
-        public RawChemical(JToken material_properties, ChemicalDatabase chemical_database) : base(material_properties, chemical_database)
+        public RawChemical(JToken material_properties, ChemicalDatabase chemical_database)
         {
             BuildMaterial(material_properties, ref chemical_database);
         }

@@ -19,7 +19,7 @@ namespace GlazeBuilder
             ChemicalDatabase = new ChemicalDatabase("PeriodicTableElements.json", "SimpleMolecules.json", "CompoundMolecules.json");
             Materials = new Dictionary<string, Material>();
             PopulateAllMaterials<RawChemical>(raw_chemical_file);
-            //PopulateAllMaterials<CompoundChemical>(compound_chemical_file);
+            PopulateAllMaterials<CompoundChemical>(compound_chemical_file);
         }
         
         ChemicalDatabase ChemicalDatabase { get; set; }

@@ -80,6 +80,8 @@ namespace GlazeBuilder
                                             temporary_maximum = Convert.ToDouble(numerical_property.Value);
                                         }
                                     }
+                                    temp_range[appearance_property.Name] = new GlazeAppearanceLimits();
+                                    ((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name] = new Dictionary<string, Tuple<double, double>>();
                                     ((Dictionary<string, Tuple<double,double>>)((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
                                 }
                             }
@@ -116,8 +118,7 @@ namespace GlazeBuilder
 
             set
             {
-                Type type = typeof(GlazeAppearanceLimits);
-                PropertyInfo myPropInfo = type.GetProperty(propertyName);
+                PropertyInfo myPropInfo = GlazeAppearanceLimits.GetProperty(propertyName);
                 myPropInfo.SetValue(this, value, null);
             }
         }
@@ -146,11 +147,30 @@ namespace GlazeBuilder
 
             set
             {
-                Type type = typeof(GlazeAppearanceLimits);
-                PropertyInfo myPropInfo = type.GetProperty(propertyName);
-                myPropInfo.SetValue(this, value, null);
+                GetType().GetProperty(propertyName).SetValue();
             }
         }
+
+        public Dictionary<string, Tuple<double, double>> GetProperty(string property_name)
+        {
+            if (property_name == "Fluxes")
+            {
+                return Fluxes;
+            }
+            else if (property_name == "FlowViscosity")
+            {
+                return FlowViscosity;
+            }
+            else if (property_name == "GlassForming")
+            {
+                return GlassForming;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
         public Dictionary<string, Tuple<double, double>> Fluxes;
         public Dictionary<string, Tuple<double, double>> FlowViscosity;
         public Dictionary<string, Tuple<double, double>> GlassForming;
