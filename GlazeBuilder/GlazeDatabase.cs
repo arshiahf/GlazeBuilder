@@ -80,10 +80,13 @@ namespace GlazeBuilder
                                             temporary_maximum = Convert.ToDouble(numerical_property.Value);
                                         }
                                     }
-                                    temp_range[appearance_property.Name] = new GlazeAppearanceLimits();
-                                    ((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name] = new Dictionary<string, Tuple<double, double>>();
-                                    ((Dictionary<string, Tuple<double,double>>)((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
-                                }
+                                    try
+                                    {
+                                        ((Dictionary<string, Tuple<double, double>>)((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
+                                    }
+                                    catch(NullReferenceException) // Catching because exception is called due to generalizing, not an actual error
+                                    { }
+                                    }
                             }
                         }
                     }
@@ -115,12 +118,6 @@ namespace GlazeBuilder
             {
                 return Properties.Settings.Default.PropertyValues[propertyName];
             }
-
-            set
-            {
-                PropertyInfo myPropInfo = GlazeAppearanceLimits.GetProperty(propertyName);
-                myPropInfo.SetValue(this, value, null);
-            }
         }
 
         public List<PyrometricCone> Cones;
@@ -142,12 +139,7 @@ namespace GlazeBuilder
         {
             get
             {
-                return Properties.Settings.Default.PropertyValues[propertyName];
-            }
-
-            set
-            {
-                GetType().GetProperty(propertyName).SetValue();
+                return GetProperty(propertyName);
             }
         }
 

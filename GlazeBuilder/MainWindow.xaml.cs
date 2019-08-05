@@ -23,8 +23,7 @@ namespace GlazeBuilder
         public MainWindow()
         {
             InitializeComponent();
-            //this.MaterialDatabase = new MaterialDatabase("Materials.csv", this);
-            this.GlazeDatabase = new GlazeDatabase();
+            GlazeDatabase = new GlazeDatabase();
             Cones.ItemsSource = GlazeDatabase.Cones.Keys;
             MaterialsList.ItemsSource = GlazeDatabase.MaterialDatabase.Materials.Keys;
         }
@@ -32,9 +31,17 @@ namespace GlazeBuilder
         private MaterialDatabase MaterialDatabase { get; set; }
         private GlazeDatabase GlazeDatabase { get; set; }
 
-        public void SubmitMaterial_Click(object sender, RoutedEventArgs e)
+        public void AddMaterial_Click(object sender, RoutedEventArgs e)
         {
-            
+            if (!MaterialsView.Items.Contains(MaterialsList.SelectedValue))
+            {
+                MaterialsView.Items.Add(MaterialsList.SelectedValue);
+            }
+        }
+
+        public void RemoveMaterial_Click(object sender, RoutedEventArgs e)
+        {
+            MaterialsView.Items.Remove(MaterialsView.SelectedValue);
         }
     }
 }
