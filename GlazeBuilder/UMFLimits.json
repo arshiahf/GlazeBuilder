@@ -3,7 +3,7 @@
 		"Cones": [
 			"Cone^04"
 		],
-		"Appearance": {
+		"Surface": {
 			"Glossy": {
 				"Fluxes": {
 					"KNaO": {
@@ -39,7 +39,7 @@
 						"Maximum": 0.90
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.05,
 						"Maximum": 0.20
@@ -49,7 +49,7 @@
 						"Maximum": 2.00
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 0.05,
 						"Maximum": 2.50
@@ -91,7 +91,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.10,
 						"Maximum": 0.30
@@ -101,7 +101,7 @@
 						"Maximum": 1.00
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 1.00,
 						"Maximum": 2.50
@@ -143,7 +143,7 @@
 						"Maximum": 0.40
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.10,
 						"Maximum": 0.30
@@ -153,7 +153,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 1.00,
 						"Maximum": 3.00
@@ -167,7 +167,7 @@
 			"Cone^5",
 			"Cone^6"
 		],
-		"Appearance": {
+		"Surface": {
 			"Glossy": {
 				"Fluxes": {
 					"KNaO": {
@@ -203,7 +203,7 @@
 						"Maximum": 0.60
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.10,
 						"Maximum": 0.30
@@ -213,7 +213,7 @@
 						"Maximum": 1.00
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 1.50,
 						"Maximum": 4.00
@@ -255,7 +255,7 @@
 						"Maximum": 0.40
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.20,
 						"Maximum": 0.40
@@ -265,7 +265,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 2.00,
 						"Maximum": 3.50
@@ -307,7 +307,7 @@
 						"Maximum": 0.20
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.20,
 						"Maximum": 0.50
@@ -317,7 +317,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 2.00,
 						"Maximum": 3.00
@@ -331,7 +331,7 @@
 			"Cone^9",
 			"Cone^10"
 		],
-		"Appearance": {
+		"Surface": {
 			"Glossy": {
 				"Fluxes": {
 					"KNaO": {
@@ -363,7 +363,7 @@
 						"Maximum": 0.15
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.20,
 						"Maximum": 0.50
@@ -373,7 +373,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 2.00,
 						"Maximum": 6.00
@@ -411,7 +411,7 @@
 						"Maximum": 0.50
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.25,
 						"Maximum": 0.60
@@ -421,7 +421,7 @@
 						"Maximum": 0.40
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 2.00,
 						"Maximum": 5.00
@@ -459,7 +459,7 @@
 						"Maximum": 0.60
 					}
 				},
-				"Flow/Viscosity": {
+				"FlowViscosity": {
 					"Al2O3": {
 						"Minimum": 0.25,
 						"Maximum": 0.80
@@ -469,7 +469,7 @@
 						"Maximum": 0.20
 					}
 				},
-				"Glass-Forming": {
+				"GlassForming": {
 					"SiO2": {
 						"Minimum": 2.00,
 						"Maximum": 5.00

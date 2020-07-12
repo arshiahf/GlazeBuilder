@@ -12,11 +12,11 @@
       "Soda": 0.642,
       "Calcium Oxide": 0.293
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.095,
       "Boric Oxide": 0.099
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 3.031
     }
   },
@@ -32,11 +32,11 @@
       "Soda": 0.283,
       "Calcium Oxide": 0.697
     },
-    "Flow/Viscosity:": {
+    "FlowViscosity:": {
       "Alumina": 0.269,
       "Boric Oxide": 0.541
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.505
     }
   },
@@ -51,11 +51,11 @@
       "Calcium Oxide": 0.680,
       "Soda": 0.320
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.038,
       "Boric Oxide": 0.640
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 1.483
     }
   },
@@ -70,11 +70,11 @@
       "Calcium Oxide": 0.688,
       "Soda": 0.312
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.399,
       "Boric Oxide": 1.104
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.734
     }
   },
@@ -91,11 +91,11 @@
       "Soda": 0.644,
       "Zinc Oxide": 0.043
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.442,
       "Boric Oxide": 0.787
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 3.100
     },
     "Other": {
@@ -114,11 +114,11 @@
       "Potash": 0.175,
       "Soda": 0.364
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.248,
       "Boric Oxide": 0.990
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.423
     }
   },
@@ -133,10 +133,10 @@
       "Calcium Oxide": 0.334,
       "Soda": 0.666
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Boric Oxide": 0.853
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.561
     }
   },
@@ -155,11 +155,11 @@
       "Soda": 0.140,
       "Strontium Oxide": 0.134
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.303,
       "Boric Oxide": 0.238
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.913
     }
   },
@@ -176,11 +176,11 @@
       "Potash": 0.179,
       "Soda": 0.692
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.362,
       "Boric Oxide": 0.548
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.263
     },
     "Other": {
@@ -199,11 +199,11 @@
       "Potash": 0.016,
       "Soda": 0.289
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.297,
       "Boric Oxide": 0.661
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.559
     }
   },
@@ -222,11 +222,11 @@
       "Soda": 0.141,
       "Strontium Oxide": 0.101
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.377,
       "Boric Oxide": 1.003
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.905
     },
     "Other": {
@@ -249,11 +249,11 @@
       "Soda": 0.127,
       "Strontium Oxide": 0.227
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.231,
       "Boric Oxide": 0.338
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 3.266
     },
     "Other": {
@@ -271,11 +271,11 @@
       "Soda": 0.148,
       "Strontium Oxide": 0.265
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.269,
       "Boric Oxide": 0.658
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 3.505
     }
   },
@@ -293,11 +293,11 @@
       "Zinc Oxide": 0.014,
       "Strontium Oxide": 0.056
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.169,
       "Boric Oxide": 0.579
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.011
     },
     "Other": {
@@ -316,11 +316,11 @@
       "Soda": 0.135,
       "Zinc Oxide": 0.103
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.246,
       "Boric Oxide": 0.840
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.642
     },
     "Other": {
@@ -339,11 +339,11 @@
       "Soda": 0.024,
       "Strontium Oxide": 0.215
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
       "Alumina": 0.218,
       "Boric Oxide": 0.533
     },
-    "Glass-Forming": {
+    "GlassForming": {
       "Silica": 2.592
     },
     "Other": {
@@ -357,10 +357,10 @@
     "Fluxes": {
 
     },
-    "Flow/Viscosity": {
+    "FlowViscosity": {
 
     },
-    "Glass-Forming": {
+    "GlassForming": {
 
     },
     "Other": {

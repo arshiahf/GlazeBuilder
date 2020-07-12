@@ -59,11 +59,11 @@ namespace GlazeBuilder
                             temp_range.Cones.Add(Cones[cone_token.ToString()]);
                         }
                     }
-                    else if (umf_property.Name == "Appearance")
+                    else if (umf_property.Name == "Surface")
                     {
-                        foreach(JProperty appearance_property in umf_property.Value.ToObject<JObject>().Children())
+                        foreach(JProperty surface_property in umf_property.Value.ToObject<JObject>().Children())
                         {
-                            foreach (JProperty chemical_group_property in appearance_property.Value.ToObject<JObject>().Children())
+                            foreach (JProperty chemical_group_property in surface_property.Value.ToObject<JObject>().Children())
                             {
                                 foreach (JProperty chemical_property in chemical_group_property.Value.ToObject<JObject>().Children())
                                 {
@@ -80,13 +80,9 @@ namespace GlazeBuilder
                                             temporary_maximum = Convert.ToDouble(numerical_property.Value);
                                         }
                                     }
-                                    try
-                                    {
-                                        ((Dictionary<string, Tuple<double, double>>)((GlazeAppearanceLimits)temp_range[appearance_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
-                                    }
-                                    catch(NullReferenceException) // Catching because exception is called due to generalizing, not an actual error
-                                    { }
-                                    }
+                                    
+                                    ((Dictionary<string, Tuple<double, double>>)((GlazeSurfaceLimits)temp_range[surface_property.Name])[chemical_group_property.Name]).Add(chemical_property.Name, new Tuple<double, double>(temporary_minimum, temporary_maximum));
+                                }
                             }
                         }
                     }
@@ -107,28 +103,55 @@ namespace GlazeBuilder
         public UnityMolecularFormulaLimit()
         {
             Cones = new List<PyrometricCone>();
-            Glossy = new GlazeAppearanceLimits();
-            Satin = new GlazeAppearanceLimits();
-            Matte = new GlazeAppearanceLimits();
+            Glossy = new GlazeSurfaceLimits();
+            Satin = new GlazeSurfaceLimits();
+            Matte = new GlazeSurfaceLimits();
         }
 
         public object this[string propertyName]
         {
             get
             {
-                return Properties.Settings.Default.PropertyValues[propertyName];
+                if (propertyName == "Glossy" || propertyName == "Satin" || propertyName == "Matte")
+                {
+                    return GetProperty(propertyName);
+                }
+                else
+                {
+                    return Cones;
+                }
+            }
+        }
+
+        public GlazeSurfaceLimits GetProperty(string property_name)
+        {
+            if (property_name == "Glossy")
+            {
+                return Glossy;
+            }
+            else if (property_name == "Satin")
+            {
+                return Satin;
+            }
+            else if (property_name == "Matte")
+            {
+                return Matte;
+            }
+            else
+            {
+                return null;
             }
         }
 
         public List<PyrometricCone> Cones;
-        public GlazeAppearanceLimits Glossy;
-        public GlazeAppearanceLimits Satin;
-        public GlazeAppearanceLimits Matte;
+        public GlazeSurfaceLimits Glossy;
+        public GlazeSurfaceLimits Satin;
+        public GlazeSurfaceLimits Matte;
     }
 
-    public class GlazeAppearanceLimits
+    public class GlazeSurfaceLimits
     {
-        public GlazeAppearanceLimits()
+        public GlazeSurfaceLimits()
         {
             Fluxes = new Dictionary<string, Tuple<double, double>>();
             FlowViscosity = new Dictionary<string, Tuple<double, double>>();

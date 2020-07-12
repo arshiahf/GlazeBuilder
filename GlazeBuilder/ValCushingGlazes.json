@@ -1,0 +1,120 @@
+﻿{
+  "Alkaline Matt": {
+    "Cones": [
+      "C^04"
+    ],
+    "GlazeFormers": {
+      "Frit 3110": 50.00,
+      "China Clay": 10.00,
+      "Flint": 10.00,
+      "Whiting": 10.00,
+      "Barium Carbonate": 15.00,
+      "Zinc Oxide": 5.00
+    },
+    "Additional": {
+      "Copper Carbonate": 2.00
+    },
+    "FiredColor": "Blue",
+    "Surface": "Matte",
+    "Reduction": false
+  },
+  "Beads": {
+    "Cones": [
+      "C^06",
+      "C^05",
+      "C^04"
+    ],
+    "GlazeFormers": {
+      "Magnesium Carbonate": 33.33,
+      "Borax": 26.67,
+      "Gerstley Borate": 33.33,
+      "Flint": 6.67
+    },
+    "Additional": {
+      "Zircopax": 6.67
+    },
+    "FiredColor": null,
+    "Surface": "Glossy",
+    "Reduction": false
+  },
+  "Bill's Basic": {
+    "Cones": [
+      "C^04"
+    ],
+    "GlazeFormers": {
+      "Frit 3124": 65.75,
+      "Kona F-4 Spar": 17.14,
+      "#6 Tile Clay": 10.82,
+      "Nepheline Syenite": 6.29
+    },
+    "Additional": {
+      "Zircopax": 14.00,
+      "Rutile": 0.50
+    },
+    "FiredColor": "Warm White",
+    "Surface": "Glossy",
+    "Reduction": false
+  },
+  "Erickson's Peeling Paint": {
+    "Cones": [
+      "C^04"
+    ],
+    "GlazeFormers": {
+      "Gerstley Borate": 80.00,
+      "Titanium Dioxide": 20.00
+    },
+    "Additional": null,
+    "FiredColor": "Opaque White",
+    "Surface": "Peeling",
+    "Reduction": false
+  },
+  "George's Gold Glaze": {
+    "Cones": [
+      "C^06",
+      "C^05"
+    ],
+    "GlazeFormers": {
+      "Frit 3195": 90.00,
+      "Ball Clay": 10.00
+    },
+    "Additional": {
+      "Bismuth Subnitrate": 4.00,
+      "Silver Nitrate": 1.00
+    },
+    "FiredColor": "Semi Transparent Gold",
+    "Surface": "Glossy",
+    "Reduction": false
+  },
+  "Glossy Clear 3": {
+    "Cones": [
+      "C^04"
+    ],
+    "GlazeFormers": {
+      "Frit 3195": 73.54,
+      "EPK": 5.88,
+      "Gerstley Borate": 4.90,
+      "Nepheline Syenite": 7.84,
+      "Lithium Carbonate": 3.92,
+      "Zinc Oxide": 1.96,
+      "Bentonite": 1.96
+    },
+    "Additional": null,
+    "FiredColor": "Clear",
+    "Surface": "Glossy",
+    "Reduction": false
+  },
+  "": {
+    "Cones": [
+      ""
+    ],
+    "GlazeFormers": {
+      "": 0.00
+    },
+    "Additional": {
+      "": 0.00
+    },
+    "FiredColor": "",
+    "Surface": "",
+    "Reduction": false
+  }
+}

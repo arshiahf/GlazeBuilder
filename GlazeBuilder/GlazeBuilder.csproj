@@ -185,6 +185,7 @@
     <Content Include="UMFLimits.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ValCushingGlazes.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

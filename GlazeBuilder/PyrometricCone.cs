@@ -15,7 +15,7 @@ namespace GlazeBuilder
             MakeCone(cone_json_property);
         }
 
-        string Name { get; set; }
+        public string Name { get; set; }
         Dictionary<string, int> SmallCones { get; set; }
         Dictionary<string, int> LargeCones { get; set; }
         Dictionary<string, int> PCECones { get; set; }
