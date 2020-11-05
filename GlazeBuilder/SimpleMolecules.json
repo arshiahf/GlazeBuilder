@@ -4,10 +4,30 @@
 		"Aluminum": 2,
 		"Oxygen": 3
 	},
+	"Aluminium Fluoride": {
+		"Formula": "AlF3",
+		"Aluminum": 1,
+		"Fluorine": 3
+	},
 	"Antimony Oxide": {
 		"Formula": "Sb2O3",
 		"Antimony": 2,
 		"Oxygen": 3
+	},
+	"Antimony Pentoxide": {
+		"Formula": "Sb2O5",
+		"Antimony": 2,
+		"Oxygen": "5"
+	},
+	"Arsenic Oxide": {
+		"Formula": "As2O3",
+		"Arsenic": 2,
+		"Oxygen": 3
+	},
+	"Arsenic Trioxide": {
+		"Formula": "As4O6",
+		"Arsenic": 4,
+		"Oxygen": 6
 	},
 	"Barium Carbonate": {
 		"Formula": "BaCO3",
@@ -15,23 +35,47 @@
 		"Carbon": 1,
 		"Oxygen": 3
 	},
+	"Barium Fluoride": {
+		"Formula": "BaF2",
+		"Barium": 1,
+		"Fluorine": 2
+	},
 	"Barium Oxide": {
+		"Alternate Names": [
+			"Baria"
+		],
 		"Formula": "BaO",
 		"Barium": 1,
+		"Oxygen": 1
+	},
+	"Beryllium Oxide": {
+		"Formula": "BeO",
+		"Beryllium": 1,
 		"Oxygen": 1
 	},
 	"Bismuth Oxide": {
 		"Formula": "Bi2O3",
 		"Bismuth": 2,
-		"Oxygen": 1
+		"Oxygen": 3
 	},
 	"Boric Oxide": {
 		"Formula": "B2O3",
 		"Boron": 2,
 		"Oxygen": 3
 	},
+	"Cadmium Oxide": {
+		"Formula": "CdO",
+		"Cadmium": 1,
+		"Oxygen": 1
+	},
+	"Calcium Fluoride": {
+		"Formula": "CaF2",
+		"Calcium": 1,
+		"Fluorine": 2
+	},
 	"Calcium Oxide": {
 		"Alternate Names": [
+			"Calcia",
 			"Lime"
 		],
 		"Formula": "CaO",
@@ -48,7 +92,19 @@
 		"Cerium": 1,
 		"Oxygen": 2
 	},
+	"Cesium Oxide": {
+		"Alternate Names": [
+			"Caesium Oxide"
+		],
+		"Formula": "Cs2O",
+		"Cesium": 2,
+		"Oxygen": 1
+	},
 	"Chromium Oxide": {
+		"Alternate Names": [
+			"Chrome Oxide",
+			"Chromium Trioxide"
+		],
 		"Formula": "Cr2O3",
 		"Chromium": 2,
 		"Oxygen": 3
@@ -60,6 +116,9 @@
 		"Oxygen": 3
 	},
 	"Cobalt Oxide II": {
+		"Alternate Names": [
+			"Cobalt Oxide"
+		],
 		"Formula": "CoO",
 		"Cobalt": 1,
 		"Oxygen": 1
@@ -108,14 +167,34 @@
 		"Lithium": 2,
 		"Fluorine": 2
 	},
+	"Dinitrogen Pentoxide": {
+		"Formula": "N2O5",
+		"Nitrogen": 2,
+		"Oxygen": 5
+	},
 	"Diphosphorous Hexoxide": {
 		"Formula": "P2O6",
 		"Phosphorous": 2,
 		"Oxygen": 6
 	},
+	"Dipraseodymium Trioxide": {
+		"Formula": "Pr2O3",
+		"Praseodymium": 2,
+		"Oxygen": 3
+	},
+	"Dysprosium Oxide": {
+		"Formula": "Dy2O3",
+		"Dysprosium": 2,
+		"Oxygen": 3
+	},
 	"Erbium Oxide": {
 		"Formula": "Er2O3",
 		"Erbium": 2,
+		"Oxygen": 3
+	},
+	"Europium Oxide": {
+		"Formula": "Eu2O3",
+		"Europium": 2,
 		"Oxygen": 3
 	},
 	"Fluorine": {
@@ -127,10 +206,58 @@
 		"Calcium": 1,
 		"Fluorine": 2
 	},
+	"Francium Oxide": {
+		"Formula": "Fr2O",
+		"Francium": 2,
+		"Oxygen": 1
+	},
+	"Gadolinium Oxide": {
+		"Formula": "GdO3",
+		"Gadolinium": 1,
+		"Oxygen": 3
+	},
+	"Gallium Oxide": {
+		"Formula": "Ga2O3",
+		"Gallium": 2,
+		"Oxygen": 3
+	},
+	"Germanium Oxide": {
+		"Formula": "GeO2",
+		"Germanium": 1,
+		"Oxygen": 2
+	},
+	"Gold Oxide": {
+		"Alternate Names": [
+			"Auric Oxide"
+		],
+		"Formula": "Au2O3",
+		"Gold": 2,
+		"Oxygen": 3
+	},
+	"Hafnium Oxide": {
+		"Formula": "HfO2",
+		"Hafnium": 1,
+		"Oxygen": 2
+	},
+	"Holmium Oxide": {
+		"Formula": "Ho2O3",
+		"Holmium": 2,
+		"Oxygen": 3
+	},
 	"Hydroxide": {
 		"Formula": "OH",
 		"Hydrogen": 1,
 		"Oxygen": 1
+	},
+	"Indium Oxide": {
+		"Formula": "In2O3",
+		"Indium": 2,
+		"Oxygen": 3
+	},
+	"Iridium Oxide": {
+		"Formula": "IrO2",
+		"Iridium": 1,
+		"Oxygen": 2
 	},
 	"Iron Chromate": {
 		"Formula": "FeCrO4",
@@ -164,11 +291,21 @@
 		"Iron": 3,
 		"Oxygen": 4
 	},
+	"Lanthanum Oxide": {
+		"Formula": "La2O3",
+		"Lanthanum": 2,
+		"Oxygen": 3
+	},
 	"Lead Carbonate": {
 		"Formula": "PbCO3",
 		"Lead": 1,
 		"Carbon": 1,
 		"Oxygen": 3
+	},
+	"Lead Fluoride": {
+		"Formula": "PbF2",
+		"Lead": 1,
+		"Fluorine": 2
 	},
 	"Lead Oxide Red": {
 		"Formula": "Pb3O4",
@@ -177,6 +314,7 @@
 	},
 	"Lead Oxide Yellow": {
 		"Alternate Names": [
+			"Lead Oxide",
 			"Litharge"
 		],
 		"Formula": "PbO",
@@ -203,9 +341,17 @@
 		"Fluorine": 1
 	},
 	"Lithium Oxide": {
+		"Alternate Names": [
+			"Lithia"
+		],
 		"Formula": "Li2O",
 		"Lithium": 2,
 		"Oxygen": 1
+	},
+	"Lutetium Oxide": {
+		"Formula": "Lu2O3",
+		"Lutetium": 2,
+		"Oxygen": 3
 	},
 	"Magnesium Carbonate": {
 		"Alternate Names": [
@@ -239,6 +385,26 @@
 		"Manganese": 1,
 		"Oxygen": 2
 	},
+	"Manganese Trioxide": {
+		"Formula": "Mn2O3",
+		"Manganese": 2,
+		"Oxygen": 3
+	},
+	"Manganous Oxide": {
+		"Formula": "MnO",
+		"Manganese": 1,
+		"Oxygen": 1
+	},
+	"Mercury Oxide": {
+		"Formula": "HgO",
+		"Mercury": 1,
+		"Oxygen": 1
+	},
+	"Molybdic Oxide": {
+		"Formula": "MoO3",
+		"Molybdenum": 1,
+		"Oxygen": 3
+	},
 	"Neodymium Oxide": {
 		"Formula": "Nd2O3",
 		"Neodymium": 2,
@@ -267,15 +433,43 @@
 		"Nickel": 2,
 		"Oxygen": 3
 	},
+	"Niobium Oxide": {
+		"Formula": "Nb2O5",
+		"Niobium": 2,
+		"Oxygen": 5
+	},
+	"Osmium Oxide": {
+		"Formula": "OsO2",
+		"Osmium": 1,
+		"Oxygen": 2
+	},
 	"Oxidoborane": {
-		"Formula":"BO2",
+		"Formula": "BO2",
 		"Boron": 1,
 		"Oxygen": 2
 	},
+	"Palladium Oxide": {
+		"Formula": "PdO",
+		"Palladium": 1,
+		"Oxygen": 1
+	},
 	"Phosphate": {
-		"Formula":"PO4",
+		"Alternate Names": [
+			"Phosphorous Oxide"
+		],
+		"Formula": "PO4",
 		"Phosphorous": 1,
 		"Oxygen": 4
+	},
+	"Phosphorous Pentoxide": {
+		"Formula": "P2O5",
+		"Phosphorous": 2,
+		"Oxygen": 5
+	},
+	"Platinum Oxide": {
+		"Formula": "PtO2",
+		"Platinum": 1,
+		"Oxygen": 2
 	},
 	"Potash": {
 		"Alternate Names": [
@@ -306,6 +500,11 @@
 		"Chromium": 2,
 		"Oxygen": 7
 	},
+	"Potassium Fluoride": {
+		"Formula": "KF",
+		"Potassium": 1,
+		"Fluorine": 1
+	},
 	"Potassium Nitrate": {
 		"Alternate Names": [
 			"Niter"
@@ -315,15 +514,69 @@
 		"Nitrogen": 1,
 		"Oxygen": 3
 	},
-	"Praseodymium Oxide": {
-		"Formula": "Pr2O3",
-		"Praseodymium": 2,
+	"Praseodymium Dioxide": {
+		"Alternate Names": [
+			"Praseodymium Oxide"
+		],
+		"Formula": "PrO2",
+		"Praseodymium": 1,
+		"Oxygen": 2
+	},
+	"Proactinium Oxide": {
+		"Formula": "Pa2O5",
+		"Proactinium": 2,
+		"Oxygen": 5
+	},
+	"Promethium Oxide": {
+		"Formula": "PmO3",
+		"Promethium": 1,
 		"Oxygen": 3
+	},
+	"Radium Oxide": {
+		"Formula": "RaO",
+		"Radium": 1,
+		"Oxygen": 1
+	},
+	"Rhenium Oxide": {
+		"Formula": "Re2O7",
+		"Rhenium": 2,
+		"Oxygen": 7
+	},
+	"Rhodium Oxide": {
+		"Formula": "RhO3",
+		"Rhodium": 1,
+		"Oxygen": 3
+	},
+	"Rubidium Oxide": {
+		"Formula": "Rb2O",
+		"Rubidium": 2,
+		"Oxygen": 1
+	},
+	"Ruthenium Oxide": {
+		"Formula": "RuO2",
+		"Ruthenium": 1,
+		"Oxygen": 2
+	},
+	"Samarium Oxide": {
+		"Formula": "Sm2O3",
+		"Samarium": 2,
+		"Oxygen": 3
+	},
+	"Scandium Oxide": {
+		"Formula": "Sc2O3",
+		"Scandium": 2,
+		"Oxygen": 3
+	},
+	"Selenium Dioxide": {
+		"Formula": "SeO2",
+		"Selenium": 1,
+		"Oxygen": 2
 	},
 	"Silica": {
 		"Alternate Names": [
 			"Flint",
-			"Quartz"
+			"Quartz",
+			"Silicon Dioxide"
 		],
 		"Formula": "SiO2",
 		"Silicon": 1,
@@ -342,7 +595,15 @@
 		"Silicon": 1,
 		"Oxygen": 1
 	},
+	"Silver Oxide": {
+		"Formula": "Ag2O",
+		"Silver": 2,
+		"Oxygen": 1
+	},
 	"Soda": {
+		"Alternate Names": [
+			"Sodium Oxide"
+		],
 		"Formula": "Na2O",
 		"Sodium": 2,
 		"Oxygen": 1
@@ -370,6 +631,11 @@
 		"Carbon": 1,
 		"Oxygen": 3
 	},
+	"Sodium Fluoride": {
+		"Formula": "NaF",
+		"Sodium": 1,
+		"Fluorine": 1
+	},
 	"Spinel": {
 		"Formula": "MgAl2O4",
 		"Manganese": 1,
@@ -388,12 +654,46 @@
 		"Chlorine": 1
 	},
 	"Strontium Oxide": {
+		"Alternate Names": [
+			"Strontia"
+		],
 		"Formula": "SrO",
 		"Strontium": 1,
 		"Oxygen": 1
 	},
+	"Tantalum Oxide": {
+		"Formula": "Ta2O5",
+		"Tantalum": 2,
+		"Oxygen": 5
+	},
+	"Technetium Oxide": {
+		"Formula": "Tc2O7",
+		"Technetium": 2,
+		"Oxygen": 7
+	},
+	"Terbium Oxide": {
+		"Formula": "Tb2O3",
+		"Terbium": 2,
+		"Oxygen": 3
+	},
+	"Thallium Oxide": {
+		"Formula": "Tl2O",
+		"Thallium": 2,
+		"Oxygen": 1
+	},
+	"Thorium Oxide": {
+		"Formula": "ThO2",
+		"Thorium": 1,
+		"Oxygen": 2
+	},
+	"Thulium Oxide": {
+		"Formula": "Tm2O3",
+		"Thulium": 2,
+		"Oxygen": 3
+	},
 	"Tin Oxide White": {
 		"Alternate Names": [
+			"Stannic Oxide",
 			"Tin Oxide"
 		],
 		"Formula": "SnO2",
@@ -407,6 +707,11 @@
 		],
 		"Formula": "TiO2",
 		"Titanium": 1,
+		"Oxygen": 2
+	},
+	"Uranium Dioxide": {
+		"Formula": "UO2",
+		"Uranium": 1,
 		"Oxygen": 2
 	},
 	"Uranium Oxide": {
@@ -436,6 +741,21 @@
 		"Carbon": 1,
 		"Oxygen": 3
 	},
+	"Wolfram Oxide": {
+		"Formula": "WO3",
+		"Wolfram": 1,
+		"Oxygen": 3
+	},
+	"Ytterbium Oxide": {
+		"Formula": "Yb2O3",
+		"Ytterbium": 2,
+		"Oxygen": 3
+	},
+	"Yttrium Oxide": {
+		"Formula": "Y2O3",
+		"Yttrium": 2,
+		"Oxygen": 3
+	},
 	"Zinc Oxide": {
 		"Alternate Names": [
 			"Zincite"
@@ -457,5 +777,13 @@
 		"Formula": "ZrO2",
 		"Zirconium": 1,
 		"Oxygen": 2
+	},
+	"Zirconium Oxide": {
+		"Alternate Names": [
+			"Zirconia"
+		],
+		"Formula": "ZrO",
+		"Zirconium": 1,
+		"Oxygen": 1
 	}
 }

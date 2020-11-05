@@ -1,361 +1,463 @@
 {
-  "Ferro Frit 3110": {
+  "1048 Frit": {
     "Alternate Names": [
-      "3110-2",
-      "F3110",
-      "Frit KFG 4110",
-      "Ferro Crystal Frit",
-      "Ferro Frit 3110-2"
+      "1048 Alkalifritte"
     ],
     "Fluxes": {
-      "Potash": 0.065,
-      "Soda": 0.642,
-      "Calcium Oxide": 0.293
+      "Calcium Oxide": {
+        "Mole%": 0.0107,
+        "UMF": 0.07
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0007,
+        "UMF": 0.01
+      },
+      "Potash": {
+        "Mole%": 0.0787,
+        "UMF": 0.29
+      },
+      "Soda": {
+        "Mole%": 0.1119,
+        "UMF": 0.63
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.095,
-      "Boric Oxide": 0.099
+      "Alumina": {
+        "Mole%": 0.2277,
+        "UMF": 0.78
+      },
+      "Boric Oxide": {
+        "Mole%": 0.1739,
+        "UMF": 0.88
+      }
     },
     "GlassForming": {
-      "Silica": 3.031
+      "Silica": {
+        "Mole%": 0.3964,
+        "UMF": 2.32
+      }
     }
   },
-  "Ferro Frit 3124": {
+  "13 Clay": {
     "Alternate Names": [
-      "3124-2",
-      "F3124",
-      "Frit 3124-2",
-      "Ferro Frit 3124-2"
+      "#13 Clay"
     ],
     "Fluxes": {
-      "Potash": 0.020,
-      "Soda": 0.283,
-      "Calcium Oxide": 0.697
-    },
-    "FlowViscosity:": {
-      "Alumina": 0.269,
-      "Boric Oxide": 0.541
-    },
-    "GlassForming": {
-      "Silica": 2.505
-    }
-  },
-  "Ferro Frit 3134": {
-    "Alternate Names": [
-      "3134-2",
-      "F3134",
-      "Frit 3134-2",
-      "Ferro Frit 3134-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.680,
-      "Soda": 0.320
+      "Calcium Oxide": {
+        "Mole%": 0.0030,
+        "UMF": 0.02
+      },
+      "Potash": {
+        "Mole%": 0.0180,
+        "UMF": 0.07
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0040,
+        "UMF": 0.03
+      },
+      "Soda": {
+        "Mole%": 0.0010,
+        "UMF": 0.01
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.038,
-      "Boric Oxide": 0.640
+      "Alumina": {
+        "Mole%": 0.2950,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 1.483
-    }
-  },
-  "Ferro Frit 3195": {
-    "Alternate Names": [
-      "3195-2",
-      "F3195",
-      "Frit 3195-2",
-      "Ferro Frit 3195-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.688,
-      "Soda": 0.312
-    },
-    "FlowViscosity": {
-      "Alumina": 0.399,
-      "Boric Oxide": 1.104
-    },
-    "GlassForming": {
-      "Silica": 2.734
-    }
-  },
-  "Ferro Frit 3269": {
-    "Alternate Names": [
-      "3269-2",
-      "F3269",
-      "Frit 3269-2",
-      "Ferro Frit 3269-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.027,
-      "Potash": 0.287,
-      "Soda": 0.644,
-      "Zinc Oxide": 0.043
-    },
-    "FlowViscosity": {
-      "Alumina": 0.442,
-      "Boric Oxide": 0.787
-    },
-    "GlassForming": {
-      "Silica": 3.100
+      "Silica": {
+        "Mole%": 0.5360,
+        "UMF": 3.08
+      }
     },
     "Other": {
-      "Fluorine": 0.287
+      "Carbon": {
+        "Mole%": 0.0020,
+        "UMF": 0.00
+      },
+      "Iron Oxide Red": {
+        "Mole%": 0.0330,
+        "UMF": 0.07
+      },
+      "LOI": {
+        "Mole%": 0.0960,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0140,
+        "UMF": 0.06
+      }
     }
   },
-  "Ferro Frit 3270": {
-    "Alternate Names": [
-      "3270-2",
-      "F3270",
-      "Frit 3270-2",
-      "Ferro Frit 3270-2"
-    ],
+  "1431 Kaolin": {
     "Fluxes": {
-      "Calcium Oxide": 0.462,
-      "Potash": 0.175,
-      "Soda": 0.364
+      "Calcium Oxide": {
+        "Mole%": 0.0050,
+        "UMF": 0.02
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.248,
-      "Boric Oxide": 0.990
+      "Alumina": {
+        "Mole%": 0.4000,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 2.423
-    }
-  },
-  "Ferro Frit 3278": {
-    "Alternate Names": [
-      "3278-2",
-      "F3278",
-      "Frit 3278-2",
-      "Ferro Frit 3278-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.334,
-      "Soda": 0.666
-    },
-    "FlowViscosity": {
-      "Boric Oxide": 0.853
-    },
-    "GlassForming": {
-      "Silica": 2.561
-    }
-  },
-  "Ferro Frit 3292": {
-    "Alternate Names": [
-      "3292-2",
-      "F3292",
-      "Frit 3292-2",
-      "Ferro Frit 3292-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.540,
-      "Lithium Oxide": 0.041,
-      "Magneium Oxide": 0.050,
-      "Potash": 0.096,
-      "Soda": 0.140,
-      "Strontium Oxide": 0.134
-    },
-    "FlowViscosity": {
-      "Alumina": 0.303,
-      "Boric Oxide": 0.238
-    },
-    "GlassForming": {
-      "Silica": 2.913
-    }
-  },
-  "Ferro Frit 5301": {
-    "Alternate Names": [
-      "5301-2",
-      "F5301",
-      "Frit 501E34",
-      "Frit 5301-2",
-      "Ferro Frit 5301-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.129,
-      "Potash": 0.179,
-      "Soda": 0.692
-    },
-    "FlowViscosity": {
-      "Alumina": 0.362,
-      "Boric Oxide": 0.548
-    },
-    "GlassForming": {
-      "Silica": 2.263
+      "Silica": {
+        "Mole%": 0.4400,
+        "UMF": 1.87
+      }
     },
     "Other": {
-      "Fluorine": 1.448
+      "Iron Oxide Red": {
+        "Mole%": 0.0050,
+        "UMF": 0.01
+      },
+      "LOI": {
+        "Mole%": 0.1325,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0100,
+        "UMF": 0.03
+      }
     }
   },
-  "Ferro Frit CC-250": {
-    "Alternate Names": [
-      "CC250-2",
-      "Frit CC250",
-      "Frit CC250-2",
-      "Ferro Frit CC-250-2"
-    ],
+  "1433 Kaolin": {
     "Fluxes": {
-      "Calcium Oxide": 0.695,
-      "Potash": 0.016,
-      "Soda": 0.289
+      "Calcium Oxide": {
+        "Mole%": 0.0050,
+        "UMF": 0.02
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.297,
-      "Boric Oxide": 0.661
+      "Alumina": {
+        "Mole%": 0.3900,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 2.559
-    }
-  },
-  "Ferro Frit CC-263": {
-    "Alternate Names": [
-      "CC263-2",
-      "Frit CC263",
-      "Frit CC268",
-      "Frit CC-268",
-      "Ferro Frit CC263-2"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.560,
-      "Magnesium Oxide": 0.087,
-      "Potash": 0.111,
-      "Soda": 0.141,
-      "Strontium Oxide": 0.101
-    },
-    "FlowViscosity": {
-      "Alumina": 0.377,
-      "Boric Oxide": 1.003
-    },
-    "GlassForming": {
-      "Silica": 2.905
+      "Silica": {
+        "Mole%": 0.4400,
+        "UMF": 1.91
+      }
     },
     "Other": {
-      "Zirconium Dioxide": 0.014
+      "Red Iron Oxide": {
+        "Mole%": 0.0100,
+        "UMF": 0.02
+      },
+      "LOI": {
+        "Mole%": 0.1325,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0100,
+        "UMF": 0.03
+      }
     }
   },
-  "Ferro Frit CC-272": {
-    "Alternate Names": [
-      "CC272-2",
-      "Frit CC-272",
-      "Frit CC-272-2",
-      "Ferro Frit CC-272-2"
-    ],
+  "1434 Kaolin": {
     "Fluxes": {
-      "Barium Oxide": 0.051,
-      "Calcium Oxide": 0.420,
-      "Lithium Oxide": 0.053,
-      "Magnesium Oxide": 0.039,
-      "Potash": 0.083,
-      "Soda": 0.127,
-      "Strontium Oxide": 0.227
+      "Calcium Oxide": {
+        "Mole%": 0.0050,
+        "UMF": 0.02
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.231,
-      "Boric Oxide": 0.338
+      "Alumina": {
+        "Mole%": 0.4000,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 3.266
+      "Silica": {
+        "Mole%": 0.4400,
+        "UMF": 1.87
+      }
     },
     "Other": {
-      "Zirconium Dioxide": 0.013
+      "Red Iron Oxide": {
+        "Mole%": 0.0050,
+        "UMF": 0.01
+      },
+      "LOI": {
+        "Mole%": 0.1325,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0100,
+        "UMF": 0.03
+      }
     }
   },
-  "Ferro Frit CC-274": {
-    "Alternate Names": [
-      "Frit CC-274-2",
-      "CC274-2"
-    ],
+  "1479 Kaolin": {
     "Fluxes": {
-      "Calcium Oxide": 0.490,
-      "Potash": 0.097,
-      "Soda": 0.148,
-      "Strontium Oxide": 0.265
+      "Calcium Oxide": {
+        "Mole%": 0.0025,
+        "UMF": 0.01
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.269,
-      "Boric Oxide": 0.658
+      "Alumina": {
+        "Mole%": 0.3950,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 3.505
-    }
-  },
-  "Ferro Frit CC-279-3": {
-    "Alternate Names": [
-      "Frit CC-279",
-      "CC279-3"
-    ],
-    "Fluxes": {
-      "Calcium Oxide": 0.308,
-      "Lithium Oxide": 0.193,
-      "Magnesium Oxide": 0.029,
-      "Potash": 0.122,
-      "Soda": 0.279,
-      "Zinc Oxide": 0.014,
-      "Strontium Oxide": 0.056
-    },
-    "FlowViscosity": {
-      "Alumina": 0.169,
-      "Boric Oxide": 0.579
-    },
-    "GlassForming": {
-      "Silica": 2.011
+      "Silica": {
+        "Mole%": 0.4450,
+        "UMF": 1.91
+      }
     },
     "Other": {
-      "Fluorine": 0.303,
-      "Zirconium Dioxide": 0.009
+      "Red Iron Oxide": {
+        "Mole%": 0.0075,
+        "UMF": 0.01
+      },
+      "LOI" {
+        "Mole%": 0.1425,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0050,
+        "UMF": 0.02
+      }
     }
   },
-  "Ferro Frit FA-233-2": {
-    "Alternate Names": [
-      "FA233-2",
-      "Frit FA-233-2"
-    ],
+  "1D Sandy Stoneware": {
     "Fluxes": {
-      "Calcium Oxide": 0.745,
-      "Potash": 0.018,
-      "Soda": 0.135,
-      "Zinc Oxide": 0.103
+      "Calcium Oxide": {
+        "Mole%": 0.0013,
+        "UMF": 0.02
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0038,
+        "UMF": 0.07
+      },
+      "Potash": {
+        "Mole%": 0.0264,
+        "UMF": 0.19
+      },
+      "Soda": {
+        "Mole%": 0.0016,
+        "UMF": 0.02
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.246,
-      "Boric Oxide": 0.840
+      "Alumina": {
+        "Mole%": 0.1466,
+        "UMF": 1.00
+      }
     },
     "GlassForming": {
-      "Silica": 2.642
+      "Silica": {
+        "Mole%": 0.7538,
+        "UMF": 8.73
+      }
     },
     "Other": {
-      "Zirconium Dioxide": 0.339
+      "LOI": {
+        "Mole%": 0.0567,
+        "UMF": 0.00
+      },
+      "Manganese Oxide": {
+        "Mole%": 0.0001,
+        "UMF": 0.00
+      },
+      "Phosphorous Pentoxide": {
+        "Mole%": 0.0002,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0060,
+        "UMF": 0.05
+      }
     }
   },
-  "Ferro Frit FB-276-P-2": {
-    "Alternate Names": [
-      "FF276-P-2"
-    ],
+  "261-F Feldspar": {
     "Fluxes": {
-      "Calcium Oxide": 0.397,
-      "Lithium Oxide": 0.249,
-      "Magnesium Oxide": 0.037,
-      "Potash": 0.079,
-      "Soda": 0.024,
-      "Strontium Oxide": 0.215
+      "Calcium Oxide": {
+        "Mole%": 0.0063,
+        "UMF": 0.07
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0001,
+        "UMF": 0.00
+      },
+      "Potash": {
+        "Mole%": 0.1090,
+        "UMF": 0.70
+      },
+      "Soda": {
+        "Mole%": 0.0242,
+        "UMF": 0.23
+      }
     },
     "FlowViscosity": {
-      "Alumina": 0.218,
-      "Boric Oxide": 0.533
+      "Alumina": {
+        "Mole%": 0.1730,
+        "UMF": 1.02
+      }
     },
     "GlassForming": {
-      "Silica": 2.592
+      "Silica": {
+        "Mole%": 0.6850,
+        "UMF": 6.86
+      }
     },
     "Other": {
-      "Zirconium Dioxide": 0.012
+      "Iron Oxide Red": {
+        "Mole%": 0.0008,
+        "UMF": 0.00
+      },
+      "LOI": {
+        "Mole%": 0.0010,
+        "UMF": 0.00
+      }
     }
-  }/*,
+  },
+  "28 Clay": {
+    "Fluxes": {
+      "Calcium Oxide": {
+        "Mole%": 0.0020,
+        "UMF": 0.02
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0020,
+        "UMF": 0.02
+      },
+      "Potash": {
+        "Mole%": 0.0140,
+        "UMF": 0.07
+      },
+      "Soda": {
+        "Mole%": 0.0010,
+        "UMF": 0.01
+      }
+    },
+    "FlowViscosity": {
+      "Alumina": {
+        "Mole%": 0.2150,
+        "UMF": 1.00
+      }
+    },
+    "GlassForming": {
+      "Silica": {
+        "Mole%": 0.6620,
+        "UMF": 5.23
+      }
+    },
+    "Other": {
+      "Carbon": {
+        "Mole%": 0.0030,
+        "UMF": 0.00
+      },
+      "Iron Oxide Red": {
+        "Mole%": 0.0140,
+        "UMF": 0.04
+      },
+      "LOI": {
+        "Mole%": 0.0710,
+        "UMF": 0.00
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0190,
+        "UMF": 0.11
+      }
+    }
+  },
+  "372 Kaolin Kaolin": {
+    "Alternate Names": [
+      "No. 372 Kaolin",
+      "Kaolin 372"
+    ],
+    "Fluxes": {
+      "Calcium Oxide": {
+        "Mole%": 0.0001,
+        "UMF": 0.00
+      },
+      "Magnesium Oxide": {
+        "Mole%": 0.0040,
+        "UMF": 0.03
+      },
+      "Potash": {
+        "Mole%": 0.0120,
+        "UMF": 0.03
+      },
+      "Soda": {
+        "Mole%": 0.0030,
+        "UMF": 0.01
+      }
+    },
+    "FlowViscosity": {
+      "Alumina": {
+        "Mole%": 0.3810,
+        "UMF": 1.00
+      }
+    },
+    "GlassForming": {
+      "Silica": {
+        "Mole%": 0.4740,
+        "UMF": 2.11
+      }
+    },
+    "Other": {
+      "Iron Oxide Red": {
+        "Mole%": 0.0060,
+        "UMF": 0.01
+      },
+      "LOI": {
+        "Mole%": 0.1170,
+        "UMF": 0.00
+      }
+    }
+  },
+  "38 Kaolin": {
+    "Fluxes": {
+      "Potash": {
+        "Mole%": 0.0010,
+        "UMF": 0.00
+      },
+      "Soda": {
+        "Mole%": 0.0010,
+        "UMF": 0.00
+      }
+    },
+    "FlowViscosity": {
+      "Alumina": {
+        "Mole%": 0.4000,
+        "UMF": 1.00
+      }
+    },
+    "GlassForming": {
+      "Silica": {
+        "Mole%": 0.4500,
+        "UMF": 1.91
+      }
+    },
+    "Other": {
+      "Iron Oxide Red": {
+        "Mole%": 0.0034,
+        "UMF": 0.01
+      },
+      "Titanium Oxide": {
+        "Mole%": 0.0073,
+        "UMF": 0.02
+      }
+    }
+  },
   "": {
     "Alternate Names": [
 
     ],
     "Fluxes": {
-
+      "": {
+        "Mole%":,
+        "UMF":
+      }
     },
     "FlowViscosity": {
 
@@ -366,5 +468,5 @@
     "Other": {
 
     }
-  }*/
+  }
 }
