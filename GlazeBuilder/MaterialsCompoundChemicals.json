@@ -468,5 +468,25 @@
     "Other": {
 
     }
+  },
+  "": {
+    "Alternate Names": [
+
+    ],
+    "Fluxes": {
+      "": {
+        "Mole%":,
+        "UMF":
+      }
+    },
+    "FlowViscosity": {
+
+    },
+    "GlassForming": {
+
+    },
+    "Other": {
+
+    }
   }
 }
